@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-md bg-white px-5 shadow-sm fixed-top">
+  <div class="container-fluid">
+
+    <!-- navbar is bootstrap's logo class -->
+    <div class="col-sm-3">
+      <a class="navbar-brand">
+        <img src="assets/img/havenDesktopLogo.png" alt="Haven charity logo" style="width:95px;">
+      </a>
+    </div>
+
+    <!-- mobile menu toggle bars  -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- search bar -->
+    <div class="col-sm-4 collapse navbar-collapse" id="mynavbar">
+      <form class="d-flex">
+        <div class="input-group border border-secondary rounded-pill">
+          <div>
+            <button type="button" class="catBtn btn py-2 px-3 rounded-end rounded-pill">
+              Categories
+            </button>
+            <img src="./../../../assets/img/icons/chevron_down.png" class="chevronDownIcon">
+
+            <!-- search dropdwon container -->
+            <div class="searchDropdown-container d-flex align-items-center flex-column">
+              <div class="d-flex">
+                <ul class="nav-item">
+                  <li><a href="#"><img src="assets/img/icons/trendingDropdown.png" class="trending-icon">Trending</a></li>
+                  <li><a href="#"><img src="assets/img/icons/religiousDropdown.png">Religious</a></li>
+                  <li><a href="#"><img src="assets/img/icons/sportsDropdown.png">Sports</a></li>
+                  <li><a href="#"><img src="assets/img/icons/wildlifeDropdown.png">Wildlife</a></li>
+                  <li><a href="#"><img src="assets/img/icons/individualsDropdown.png">Individuals</a></li>         
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <input type="text" class="form-control border border-secondary border-0 border-start" placeholder="...search for a charity">
+          <span class=" rounded-circle p-1 ms-2"><img src="../assets/img/icons/magnifying_lens.png" class="img-fluid"></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- listed link items -->
+    <div class="col-sm-3 collapse navbar-collapse justify-content-between" id="mynavbar">
+      <ul class="btnGroup navbar-nav me-3 justify-content-between">
+        <li class="nav-item">
+          <a class="nav-link border rounded-pill text-black px-3 me-3" href="#">CREATE</a>
+        </li>
+        <div class="vl m-auto"></div>
+        <li class="nav-item">
+          <a class="nav-link border rounded-pill text-black px-3 ms-3" href="#">DONATE</a>
+        </li>
+      </ul>
+
+      <!-- user signup & login button  -->
+      <div class="btnGroup justify-content-between">
+        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/img/icons/night_mode.png" class="p-1" style="width:25px; height:25px; margin:0px 2px;"></button>
+        <button type="button" class="userSignup-button btn btn-outline rounded-pill py-2 px-3" href="#">
+          <img src="assets/img/icons/menu_bars.svg" style="width:20px" class="me-2">
+          <img src="assets/img/icons/user_icon.png" style="width:20px">
+        </button>
+      </div>
+
+      <!-- user signup & login dropdown menu  -->
+      <div class="userSignup-container d-flex align-items-center flex-column">
+        <div class="PhotoName-wrapper d-flex align-items-center justify-content-center flex-column">
+          <a href="#"><img class="img-fluid" src="./assets/img/moji.png"></a>
+          <p class="py-3"><a href="#">Mojisola Badmus</a></p>
+          <ul class="nav-item p-0 justify-content-center">
+            <a href="#"><li class="nav-item py-2">Sign in</li></a>
+            <a href="#"><li class="nav-item py-2">Sign up</li></a>
+            <a href="#"><li class="nav-item py-2">F.A.Q.</li></a>          
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
