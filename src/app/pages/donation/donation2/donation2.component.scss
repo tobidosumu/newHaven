@@ -2,7 +2,7 @@
   body {
     margin: 80px 0;
     position: absolute;
-    background: url("../../../assets/img/signin circle.png") no-repeat 500% 0% fixed;
+    background: url("../../../../assets/img/signin circle.png") no-repeat 400% 0% fixed;
     font-family: "Libre Franklin", sans-serif, "Libre Baskerville", serif;
     padding: 25px 80px;
   }
@@ -27,8 +27,7 @@
     margin-right: 100px;
     display: flex;
     flex-direction: column;
-    
-    
+        
   }
   h2{
     font-size: 18px;
@@ -51,22 +50,6 @@
     font-size: 16px;
     
   }
-  select{
-    border-radius: 25px;
-    font-size: 18px;
-    border: 0.5px solid rgba(0, 0, 0, 0.493);
-    padding: 6px 77px;
-    margin: 8px 0;
-    outline: none;
-
-  }
-  option{
-    font-size: 13px;
-    background: beige;
-    outline: none;
-  }
- 
-  
   input{
     border: 1px solid rgba(0, 0, 0, 0.493);
     border-radius: 25px;
@@ -81,39 +64,21 @@
     -webkit-appearance: none;
      margin: 0;
   }
-  
-  textarea{
-    margin: 8px 0;
-    border: 0.5px solid rgba(0, 0, 0, 0.493);
-    font-size: 12px;
-    padding: 5px 10px;
-    letter-spacing: 0.5px;
-    outline: none;
-
-  }
-
 
   /* Mark input boxes that gets an error on validation: */
   input.invalid {
     background-color: beige;
   }
-  select.invalid {
-    background-color: beige;
-  }
-  textarea.invalid {
-    background-color: beige;
-  }
-  
-  
+
   /* Hide all steps by default: */
-  
+
   
   button {
     background: #3FA9F5;
     border: 0.5px solid rgba(0, 0, 0, 0.493);
     border-radius: 25px;
     color: #ffffff;
-    padding: 7px 20px;
+    padding: 7px 30px;
     font-size: 17px;
     cursor: pointer;
   }
@@ -125,9 +90,7 @@
       margin: 45px 0 0 0;
       align-self: flex-end;
   }
-  #prevBtn {
-    background-color: #bbbbbb;
-  }
+  
   .steps{
     margin-top: 40px;
   }
