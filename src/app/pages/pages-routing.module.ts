@@ -7,6 +7,7 @@ import { DonationComponent } from './donation/donation.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
+import { CongratsComponent } from './congrats/congrats.component';
 
 const routes: Routes = [
   { path: '', 
@@ -17,7 +18,8 @@ const routes: Routes = [
       { path: 'donation', component: DonationComponent },
       { path: 'sign-in', component: SignInComponent },
       { path: 'sign-up', component: SignUpComponent },
-      { path: 'forgotpwd', component: ForgotpwdComponent }
+      { path: 'forgotpwd', component: ForgotpwdComponent },
+      { path:  'congrats', component: CongratsComponent }
     ]
   }
 ];
