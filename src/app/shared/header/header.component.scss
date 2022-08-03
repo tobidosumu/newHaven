@@ -17,10 +17,14 @@ nav {
 
     // search bar
     form {
-        .chevronDownIcon {
-            z-index: 1;
-            width: 12px;
-            margin: 4px 12px 0 0;
+        button {
+            img {
+                width: 12px;
+                margin-left: 12px;
+            }
+            &:hover {
+                background-color: $offWhiteBgColor;
+            }
         }
         // search dropdown container
         .searchDropdown-container {
@@ -93,6 +97,9 @@ nav {
             height:45px; 
             margin-left:2px;
             background-color: $blueBgColor;
+        }
+        &:hover button {
+            background-color: $offWhiteBgColor;
         }
         
     }
