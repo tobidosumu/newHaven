@@ -12,4 +12,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ShowCatgoryMenu: boolean = false; // hidden by default
+  ShowUserMenu: boolean = false; // hidden by default
+
+
+  toggleCategoryMenu() {
+  
+  this.ShowCatgoryMenu = ! this.ShowCatgoryMenu;
+  
+  }
+
+  toggleUserMenu() {
+  
+    this.ShowUserMenu = ! this.ShowUserMenu;
+    
+    }
+
 }

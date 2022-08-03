@@ -14,8 +14,6 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
 
-
-
 @NgModule({
   declarations: [
     PagesComponent,
