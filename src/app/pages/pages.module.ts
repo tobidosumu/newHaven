@@ -10,7 +10,7 @@ import { DonationComponent } from './donation/donation.component';
 import { CongratsComponent } from './congrats/congrats.component';
 import { FaqComponent } from './faq/faq.component';
 import { CauseCardComponent } from './home/cause-card/cause-card.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
 import { NewpwdinputComponent } from './newpwdinput/newpwdinput.component';

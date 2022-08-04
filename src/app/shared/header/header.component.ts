@@ -27,5 +27,8 @@ export class HeaderComponent implements OnInit {
     this.ShowUserMenu = ! this.ShowUserMenu;
     
     }
+    scrollTo(element: any): void {
+      (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
 
 }

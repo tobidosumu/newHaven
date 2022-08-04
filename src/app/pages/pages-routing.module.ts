@@ -4,12 +4,13 @@ import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DonationComponent } from './donation/donation.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { SignInComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
 import { CongratsComponent } from './congrats/congrats.component';
 import { NewpwdinputComponent } from './newpwdinput/newpwdinput.component';
 import { WildlifeCatComponent } from './wildlife-cat/wildlife-cat.component';
+import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   { path: '', 
@@ -23,7 +24,8 @@ const routes: Routes = [
       { path: 'forgotpwd', component: ForgotpwdComponent },
       { path:  'congrats', component: CongratsComponent },
       { path: 'newpwdinput', component: NewpwdinputComponent},
-      { path: 'wildlife-cat', component: WildlifeCatComponent}
+      { path: 'wildlife-cat', component: WildlifeCatComponent},
+      { path: 'faq', component: FaqComponent}
     ]
   }
 ];
