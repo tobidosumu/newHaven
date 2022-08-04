@@ -3,7 +3,7 @@
 
     <!-- navbar is bootstrap's logo class -->
     <div class="col-sm-3">
-      <a routerLink="/home-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="navbar-brand">
+      <a class="navbar-brand">
         <img src="assets/img/havenDesktopLogo.png" alt="Haven charity logo" style="width:95px;">
       </a>
     </div>
@@ -18,20 +18,13 @@
       <form class="d-flex">
         <div class="input-group border border-secondary rounded-pill">
           <div>
-            <button
-              (click)="toggleCategoryMenu()" 
-              type="button" 
-              class="catBtn btn py-2 px-3 rounded-end rounded-pill">
+            <button type="button" class="catBtn btn py-2 px-3 rounded-end rounded-pill">
               Categories
-              <img src="./../../../assets/img/icons/chevron_down.png" class="chevronDownIcon">
             </button>
+            <img src="./../../../assets/img/icons/chevron_down.png" class="chevronDownIcon">
 
             <!-- search dropdwon container -->
-            <div 
-              *ngIf="ShowCatgoryMenu" 
-              id="divshow"
-              class="searchDropdown-container d-flex align-items-center flex-column">
-              
+            <div class="searchDropdown-container d-flex align-items-center flex-column">
               <div class="d-flex">
                 <ul class="nav-item">
                   <li><a href="#"><img src="assets/img/icons/trendingDropdown.png" class="trending-icon">Trending</a></li>
@@ -45,7 +38,7 @@
 
           </div>
           <input type="text" class="form-control border border-secondary border-0 border-start" placeholder="...search for a charity">
-          <span class=" rounded-circle p-1 ms-2"><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img src="../assets/img/icons/magnifying_lens.png" class="img-fluid"></a></span>
+          <span class=" rounded-circle p-1 ms-2"><img src="../assets/img/icons/magnifying_lens.png" class="img-fluid"></span>
         </div>
       </form>
     </div>
@@ -65,20 +58,14 @@
       <!-- user signup & login button  -->
       <div class="btnGroup justify-content-between">
         <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/img/icons/night_mode.png" class="p-1" style="width:25px; height:25px; margin:0px 2px;"></button>
-       
-        <button 
-          (click)="toggleUserMenu()" 
-          type="button" 
-          class="userSignup-button btn btn-outline rounded-pill py-2 px-3">
+        <button type="button" class="userSignup-button btn btn-outline rounded-pill py-2 px-3" href="#">
           <img src="assets/img/icons/menu_bars.svg" style="width:20px" class="me-2">
           <img src="assets/img/icons/user_icon.png" style="width:20px">
         </button>
       </div>
 
       <!-- user signup & login dropdown menu  -->
-      <div 
-        *ngIf="ShowUserMenu"
-        class="userSignup-container d-flex align-items-center flex-column">
+      <div class="userSignup-container d-flex align-items-center flex-column">
         <div class="PhotoName-wrapper d-flex align-items-center justify-content-center flex-column">
           <a href="#"><img class="img-fluid" src="./assets/img/moji.png"></a>
           <p class="py-3"><a href="#">Mojisola Badmus</a></p>
