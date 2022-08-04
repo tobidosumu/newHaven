@@ -13,6 +13,8 @@ import { CauseCardComponent } from './home/cause-card/cause-card.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
+import { NewpwdinputComponent } from './newpwdinput/newpwdinput.component';
+import { WildlifeCatComponent } from './wildlife-cat/wildlife-cat.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
     CauseCardComponent,
     SignInComponent,
     SignUpComponent,
-    ForgotpwdComponent
+    ForgotpwdComponent,
+    NewpwdinputComponent,
+    WildlifeCatComponent
   ],
   imports: [
     CommonModule,

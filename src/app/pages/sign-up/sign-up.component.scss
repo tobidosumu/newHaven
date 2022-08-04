@@ -39,7 +39,7 @@ form {
 input {
     position: absolute;
     left: 30%;
-    width: 400px;
+    width: 460px;
     height: 50px;
     padding: 0 3% 0 3%;
     border-width: thin;
@@ -57,11 +57,11 @@ input {
 }
 .email2 {
     position: absolute;
-    top: 116%;
+    top: 102%;
 }
 .password2 {
     position: absolute;
-    top: 207%;
+    top: 179%;
 }
 .signinsignupforgot {
     position: fixed;
@@ -76,7 +76,7 @@ input {
     color: black;
     position: absolute;
     left: 30%;
-    top: -800%;
+    bottom: 350%;
 }
 .signup {
     font-family: 'Libre Franklin', sans-serif;
@@ -84,7 +84,7 @@ input {
     color: black;
     position: absolute;
     left: 30%;
-    top: 1140%;
+    top: 1040%;
 }
 a {
     color: black;

@@ -4,12 +4,10 @@
     flex-flow: column wrap;
     align-items: center;
     position: relative;
-    font-family: 'Libre Franklin', sans-serif;
 }
 .imglogo {
     position: fixed;
     top: 0%;
-    right: 43.7%;
     padding: 2%;
 }
 .imgline {
@@ -22,7 +20,8 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 40%;
+    bottom: 35.2%;
+    margin-right: 32px;
 }
 .text1 {
     font-family: 'Libre Franklin', sans-serif;
@@ -30,7 +29,7 @@
     font-size: x-large;
 }
 input {
-    width: 590px;
+    width: 550px;
     height: 50px;
     padding: 0 3% 0 3%;
     border-width: thin;
@@ -59,27 +58,20 @@ button:hover {
 button:active {
     background-color: #3C9FE6;
 }
-.text2 {
-    position: fixed;
-    bottom: 10%;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    font-size: large;
-}
-.linked {
+a {
     font-weight: 700;
     color: black;
 }
-.linked:link {
+a:link {
     text-decoration: none;
 }
-.linked:hover {
+a:hover {
     text-decoration: none;
     color: #3FA9F5;
 }
-.linked:visited {
+a:visited {
     text-decoration: none;
 }
-.linked:active {
+a:active {
     text-decoration: none;
 }
