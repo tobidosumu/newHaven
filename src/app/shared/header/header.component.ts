@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-header',
@@ -7,31 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller, private router: Router) { }
 
   ngOnInit(): void {
+    this.router.navigate(["/"]);
   }
 
-<<<<<<< HEAD
-=======
+  scrollToCategory() {
+    this.scroller.scrollToAnchor("targetCategory");
+  }
+
   ShowCatgoryMenu: boolean = false; // hidden by default
   ShowUserMenu: boolean = false; // hidden by default
 
 
   toggleCategoryMenu() {
-  
-  this.ShowCatgoryMenu = ! this.ShowCatgoryMenu;
-  
+    this.ShowCatgoryMenu = !this.ShowCatgoryMenu;
   }
 
   toggleUserMenu() {
-  
-    this.ShowUserMenu = ! this.ShowUserMenu;
-    
-    }
-    scrollTo(element: any): void {
-      (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    }
-
->>>>>>> b6e1d86f903b08e3b9222f3b686a18740d79e60b
+    this.ShowUserMenu = !this.ShowUserMenu;
+  }
 }

@@ -17,10 +17,11 @@ nav {
 
     // search bar
     form {
-        .chevronDownIcon {
-            z-index: 1;
-            width: 12px;
-            margin: 4px 12px 0 0;
+        button {
+            img {
+                width: 12px;
+                margin-left: 12px;
+            }
         }
         // search dropdown container
         .searchDropdown-container {
