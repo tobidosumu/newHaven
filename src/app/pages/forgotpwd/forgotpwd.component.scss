@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap');
+.flexcontainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.imglogo {
+    position: fixed;
+    top: 0%;
+    right: 43.7%;
+    padding: 2%;
+}
+.imgline {
+    position: Fixed;
+    bottom: 0%;
+}
+.text1-input-button {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40%;
+}
+.text1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+input {
+    width: 590px;
+    height: 50px;
+    padding: 0 3% 0 3%;
+    border-width: thin;
+    border-radius: 200px;
+}
+::placeholder {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    color: black;
+}
+button {
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 200px;
+    background-color: #3FA9F5;
+    color: white;
+    position: relative;
+    top: 50px;
+    font-size: larger;
+}
+button:hover {
+    background-color: #83BFEA;
+}
+button:active {
+    background-color: #3C9FE6;
+}
+.text2 {
+    position: fixed;
+    bottom: 10%;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+.linked {
+    font-weight: 700;
+    color: black;
+}
+.linked:link {
+    text-decoration: none;
+}
+.linked:hover {
+    text-decoration: none;
+    color: #3FA9F5;
+}
+.linked:visited {
+    text-decoration: none;
+}
+.linked:active {
+    text-decoration: none;
+}

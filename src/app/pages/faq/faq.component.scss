@@ -1,0 +1,112 @@
+@import 'src/styles';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+main{
+    margin: 130px 80px;
+    
+
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: #3FA9F5;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.searchBox {
+    display: flex;
+    width: 100%;
+    border: 1px solid #839bb1; 
+    background-color: #fff;
+    border-radius: 50px;
+
+}
+
+.searchForm {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.searchForm:hover {
+    border: 1px solid #000;
+}
+
+::placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+.searchBox input[type=search] {
+    width: 110%;
+    height: 46px;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding-left: 5%;
+}
+
+.searchIcon {
+    width: 38px;
+}
+  
+.searchBtn {
+    width: 50px;
+    padding: 4px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3FA9F5;
+    cursor: pointer; 
+}
+.faq{
+    margin: 100px 0;
+}
+.dropdown {
+    width: 68%;
+    height: 46px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #3fa9f570;
+    border: 1px solid #839bb1;
+    padding: 3.4% 45px;
+    border-radius: 50px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 20px 0;
+}
+button{
+    font-weight: bold;
+    
+}
+
+.dropdown > button {
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+.dropdown > button > img {
+    width: 15px;
+}
+#dropdown2{
+    width: 320%;
+}

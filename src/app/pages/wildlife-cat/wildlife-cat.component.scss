@@ -1,0 +1,34 @@
+@import 'src/styles';
+.category-container {
+    .navbar {
+        background-color: $blueBgColor;
+    }
+    .categoryMenu {
+        border-bottom: 2px solid $whiteBorder;
+    }
+    .menuBtn > a {
+        @include category-icon();
+    }
+    .menuBtn > a:hover {
+        background-color: $menuBtnBgHover;
+    }
+    .menuNavBtn > a {
+        @include roundBtn();
+    }
+    .activeBtn > a {
+        background-color: $whiteBgColor;
+        &:hover {
+            background-color: $whiteBgColor;
+        }
+        p {
+            color: $blueFontColor;
+        }
+    }
+
+    //causes card container
+    .causes-container {
+        width: 100%;
+        padding: 4%;
+        background-color: $offWhiteBgColor;
+    }
+}
