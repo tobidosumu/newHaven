@@ -18,6 +18,9 @@ nav {
                 width: 12px;
                 margin-left: 12px;
             }
+            &:hover {
+                background-color: $offWhiteBgColor;
+            }
         }
         .input-group .btn:focus {
             background-color: $offWhiteBgColor;
