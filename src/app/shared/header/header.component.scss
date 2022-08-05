@@ -1,9 +1,5 @@
 @import 'src/styles';
 
-body {
-    font-family: $myFont;
-}
-
 // The styles below apply to search bar. catBtn refers to the category button inside the search bar 
 nav {
     height: $headerHeight;
@@ -23,6 +19,10 @@ nav {
                 margin-left: 12px;
             }
         }
+        .input-group .btn:focus {
+            background-color: $offWhiteBgColor;
+        } 
+
         // search dropdown container
         .searchDropdown-container {
             width: 100%;
@@ -111,6 +111,11 @@ nav {
         & > li > a:hover {
             border: 1px solid $primaryBorderColor !important;
         }
+        & > li:nth-child(2) {
+            height: 30px; 
+            margin: auto;
+            border-left: 1px solid $primaryBorderColor;
+        }
         button {
             border: 1px solid $primaryBorderColor;
         }
@@ -121,7 +126,6 @@ nav {
 
     /* user profile dropdown starts here */
     .userSignup-container {
-        // visibility: hidden;
         @include dropdown();
         height: 320px;
         top: 100px;

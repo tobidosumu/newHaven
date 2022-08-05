@@ -29,7 +29,6 @@
             <!-- search dropdwon container -->
             <div 
               *ngIf="ShowCatgoryMenu" 
-              id="divshow"
               class="searchDropdown-container d-flex align-items-center flex-column">
               
               <div class="d-flex">
@@ -56,6 +55,7 @@
         <li class="nav-item">
           <a class="nav-link border rounded-pill text-black px-3 me-3" href="#">CREATE</a>
         </li>
+        <li></li>
         <li class="nav-item">
           <a routerLink="" class="nav-link border rounded-pill text-black px-3 ms-3" (click)="scrollToCategory()">DONATE</a>
         </li>
@@ -63,7 +63,7 @@
 
       <!-- user signup & login button  -->
       <div class="btnGroup justify-content-between">
-        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/img/icons/night_mode.png" class="p-1" style="width:25px; height:25px; margin:0px 2px;"></button>
+        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/img/icons/night_mode.png" class="p-1" style="width:23px; height:25px; margin:0px 2px;"></button>
        
         <button 
           (click)="toggleUserMenu()" 

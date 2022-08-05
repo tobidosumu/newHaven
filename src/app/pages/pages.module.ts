@@ -12,7 +12,6 @@ import { FaqComponent } from './faq/faq.component';
 import { CauseCardComponent } from './home/cause-card/cause-card.component';
 
 
-
 @NgModule({
   declarations: [
     PagesComponent,
