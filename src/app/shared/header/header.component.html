@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-white px-5 shadow-sm fixed-top">
+<nav id="targetHeader" class="navbar navbar-expand-md bg-white px-5 shadow-sm fixed-top">
   <div class="container-fluid">
 
     <!-- navbar is bootstrap's logo class -->
@@ -23,7 +23,7 @@
               type="button" 
               class="catBtn btn py-2 px-3 rounded-end rounded-pill">
               Categories
-              <img src="./../../../assets/img/icons/chevron_down.png" class="chevronDownIcon">
+              <img src="./../../../assets/img/icons/chevron_down.png">
             </button>
 
             <!-- search dropdwon container -->
@@ -56,9 +56,8 @@
         <li class="nav-item">
           <a class="nav-link border rounded-pill text-black px-3 me-3" href="../../pages/donation">CREATE</a>
         </li>
-        <div class="vl m-auto"></div>
         <li class="nav-item">
-          <a class="nav-link border rounded-pill text-black px-3 ms-3" href=" #category-containers">DONATE</a>
+          <a routerLink="" class="nav-link border rounded-pill text-black px-3 ms-3" (click)="scrollToCategory()">DONATE</a>
         </li>
       </ul>
 

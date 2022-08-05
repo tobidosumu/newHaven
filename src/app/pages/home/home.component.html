@@ -1,4 +1,5 @@
 <app-header></app-header>
+
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -40,7 +41,7 @@
 <div class="ctaBtn-container container-fluid py-3 px-5">
   <div class="col-sm-12 w-75 d-flex justify-content-between m-auto p-4">
     <button class="ctaBtn rounded-pill btn px-5 py-3 btn-lg" onclick="document.location='/pages/donation'">Create Cause</button>
-    <button class="ctaBtn rounded-pill btn px-5 py-3 btn-lg" onclick="document.location=' #category-containers'">Make Donation</button>
+    <button (click)="scrollToCategory()" class="ctaBtn rounded-pill btn px-5 py-3 btn-lg">Make Donation</button>
   </div>
 </div>
 
@@ -76,8 +77,8 @@
         <p class="card-text">Find a passion to sponsor</p>
       </div>
     </div>
-
   </div>
+  <p id="targetCategory"></p>
 </div>
 
 <div id="category-containers"></div>
@@ -204,6 +205,5 @@
       <p><a href="tel:+2348105120765">+234 810 512 0765</a></p> 
     </div>
   </div>
-  
 </div>
 <app-footer></app-footer>
