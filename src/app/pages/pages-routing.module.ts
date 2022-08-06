@@ -4,21 +4,20 @@ import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DonationComponent } from './donation/donation.component';
-import { CongratsComponent } from './congrats/congrats.component';
 import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
-  { path: '', 
+  {
+    path: '',
     component: PagesComponent,
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'donation', component: DonationComponent },
-      { path:  'congrats', component: CongratsComponent },
-      { path: 'faq', component: FaqComponent}
+      { path: 'faq', component: FaqComponent }
     ]
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
