@@ -15,7 +15,7 @@ const routes: Routes = [
       { path: 'sign-up', component: SignUpComponent },
       { path: 'login', component: LoginComponent },
       { path: 'forgot-pwd', component: ForgotPwdComponent },
-      { path: 'congrats', component: CongratsComponent },
+      { path: 'congrats', component: CongratsComponent }, 
       { path: 'reset-pwd', component: ResetPwdComponent}
     ]
   }

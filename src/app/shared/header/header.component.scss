@@ -104,8 +104,11 @@ nav {
         height: 30px;
         border-left: 1px solid $primaryBorderColor;
     }
+
+    // listed link items
     .btnGroup {
         & > li > a {
+            // margin-left: 30px;
             font-size: $navLinkFontSize;
             font-weight: 500;
             border: 1px solid $whiteBorder !important;

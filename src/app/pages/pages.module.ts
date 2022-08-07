@@ -23,7 +23,7 @@ import { CauseCardComponent } from './home/cause-card/cause-card.component';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    SharedModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
