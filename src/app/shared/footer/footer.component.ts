@@ -19,4 +19,7 @@ export class FooterComponent implements OnInit {
     this.scroller.scrollToAnchor("targetHeader");
   }
 
+  scrollTostory() {
+    this.scroller.scrollToAnchor("ourstory");
+  }
 }
