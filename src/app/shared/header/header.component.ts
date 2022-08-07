@@ -19,12 +19,12 @@ export class HeaderComponent implements OnInit {
     this.scroller.scrollToAnchor("targetCategory");
   }
 
-  ShowCatgoryMenu: boolean = false; // hidden by default
+  ShowCategoryMenu: boolean = false; // hidden by default
   ShowUserMenu: boolean = false; // hidden by default
 
 
   toggleCategoryMenu() {
-    this.ShowCatgoryMenu = !this.ShowCatgoryMenu;
+    this.ShowCategoryMenu = !this.ShowCategoryMenu;
   }
 
   toggleUserMenu() {
