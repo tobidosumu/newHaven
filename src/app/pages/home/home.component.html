@@ -3,45 +3,45 @@
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/slides/how_your_donations_benefit_children_in_the_Philipines.jpg" alt="how your donations benefit children in the Philippines" class="img-slide d-block">
     </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/slides/how_your_donations_benefit_children_in_the_Philipines.jpg" alt="how your donations benefit children in the Philipines" class="img-slide d-block">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/slides/how_your_donations_benefit_children_in_Nigeria.jpeg" alt="how your donations benefit children in Nigeria" class="img-slide d-block">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/slides/how_your_donations_used_in_Ukraine.jpg" alt="how your donations used in Ukraine" class="img-slide d-block">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/slides/how_your_donations_are_putting_a_smile_on_the_faces_of_DRC_children.jpg" alt="how your donations are putting a smile on the faces of DRC children" class="img-slide d-block">
-      </div>
+    <div class="carousel-item">
+      <img src="assets/img/slides/how_your_donations_benefit_children_in_Nigeria.jpeg" alt="how your donations benefit children in Nigeria" class="img-slide d-block">
     </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+    <div class="carousel-item">
+      <img src="assets/img/slides/how_your_donations_used_in_Ukraine.jpg" alt="how your donations used in Ukraine" class="img-slide d-block">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/slides/how_your_donations_are_putting_a_smile_on_the_faces_of_DRC_children.jpg" alt="how your donations are putting a smile on the faces of DRC children" class="img-slide d-block">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 
 </div>
 
 <!-- call-to-action-buttons (ctaBtn) container -->
 <div class="ctaBtn-container container-fluid py-3 px-5">
   <div class="col-sm-12 w-75 d-flex justify-content-between m-auto p-4">
-    <button class="ctaBtn rounded-pill btn px-5 py-3 btn-lg">Create Cause</button>
-    <button class="ctaBtn rounded-pill btn px-5 py-3 btn-lg">Make Donation</button>
+    <button onclick="document.location='/pages/donation'" class="rounded-pill btn px-5 py-3 btn-lg">Create Cause</button>
+    <button (click)="scrollToCategory()" class="rounded-pill btn px-5 py-3 btn-lg">Make Donation</button>
   </div>
 </div>
 
@@ -77,8 +77,8 @@
         <p class="card-text">Find a passion to sponsor</p>
       </div>
     </div>
-
   </div>
+  <p id="targetCategory" style="margin-bottom: 1.8rem"></p>
 </div>
 
 <!-- category container -->
@@ -133,7 +133,8 @@
         </li>
     </ul>
 
-  </div>
+  
+</div>
 
   <!-- causes card container -->
   <div class="causes-container">
@@ -153,7 +154,7 @@
       <app-cause-card></app-cause-card>
     </div>
   </div>
-
+  <p id="ourstory" style="margin-bottom: 6rem"></p>
 </div>
 
 <!-- our story -->
@@ -179,7 +180,7 @@
 
   <div class="teamDetails d-flex justify-content-between m-auto">
     <div>
-      <img src="./assets/img/adenike_magret1.jpeg" alt="Adenike Magaret">
+      <img src="./assets/img/adenike_magret1.jpeg" alt="Adenike Margaret">
       <h3>Adenuga Adenike</h3>
       <p><a href="tel:+2347011684833">+234 701 168 4833</a></p> 
     </div>
@@ -202,6 +203,5 @@
       <p><a href="tel:+2348105120765">+234 810 512 0765</a></p> 
     </div>
   </div>
-  
 </div>
 <app-footer></app-footer>

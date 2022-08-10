@@ -1,7 +1,7 @@
 <footer class="container-fluid">
     <div class="d-flex upperFooter">
         <div class="footerLogo col-sm-2">
-            <img src="assets/img/haven_mobile_white_logo.png" class="" alt="Haven mobile white logo">
+            <a routerLink=""><img src="assets/img/haven_mobile_white_logo.png" class="" alt="Haven mobile white logo"></a>
         </div>
         <div class="col-sm-4">
             <ul class="nav">
@@ -34,19 +34,19 @@
                     <a href="#" class="nav-link">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a routerLink="" class="nav-link" (click)="scrollTostory()">About</a>
                 </li> 
                 <li class="nav-item">
                     <a href="#" class="nav-link">Help centre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Haven stories</a>
+                    <a href="#" class="nav-link">Haven's stories</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Blog</a>
                 </li> 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">What special about Haven</a>
+                    <a href="#" class="nav-link">What's special about Haven</a>
                 </li>
                 <li class="nav-item">
                     <select class="dropdown">
@@ -94,4 +94,5 @@
             </ul>
         </div>
     </div>
+    <!-- <button><a href=""><img src="assets/img/icons/chevron_up.svg" alt="Scroll Up"></a></button> -->
 </footer>

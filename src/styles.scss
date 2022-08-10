@@ -29,6 +29,7 @@ $offWhiteBgColor: #f1f0f0bd;
 $menuBtnBgHover: #ffffff23;
 $transparentBlueBgColor: rgba(63, 169, 245, 0.8);
 $blueBgColor: #3FA9F5;
+$blackBgColor: #000000;
 $cardBoxShadow: rgb(0 0 0 / 30%);
 $btnBoxShadow: rgba(0, 0, 0, 0.507);
 
@@ -38,9 +39,10 @@ $whiteBorder: #ffffff;
 $redBorderColor: #ff1d25;
 $blueBorderColor: #3FA9F5;
 $blackBorderColor: #000000;
+$grayBorderColor: #f1f0f0bd;
 
 // header height
-$headerHeight: 120px;
+$headerHeight: 18vh;
 
 // mixins (functions)
 @mixin myH1 {

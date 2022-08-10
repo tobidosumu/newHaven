@@ -1,1 +1,29 @@
-<p>sign-up works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<div class="bg">
+    <a routerLink=""><img class= "logo" src="../../../assets/img/havenDesktopLogo.png" alt="Haven" width="187px"></a>
+    <img class= "circle" src="../../../assets/img/signin circle.png">
+    <div class="wordbox1-and-input">
+        <p class="text1">
+        Let your fundraising<br>
+        journey begin!<br>
+        </p>
+        <p class="text2">
+        We've made it easy for you.
+        </p>
+        <form>
+            <input class="name" type="text" placeholder="Name"><br>
+            <input class="email" type="text" placeholder="Email"><br>
+            <input class="phone" type="text" placeholder="Phone Number"><br>
+            <input [type]= " shoPassword ? 'text' : 'password' " class="password" placeholder="password"><br>
+            <i class="far fa-eye" id="togglePassword" style="position: absolute; left: 64%; top: 195%; cursor: pointer;" (click)='shoHidePassword()'></i>
+        </form>
+    </div>
+    <div class="signinsignupforgot">
+        <p class="textbanner">Sign up</p><br>
+        <p class="signup">
+            If you already have an account 
+            <a class="link1" routerLink="/auth/login">Login</a><br>
+        </p>
+    </div>
+    <button>Continue</button>
+</div>

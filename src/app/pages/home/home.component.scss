@@ -1,7 +1,7 @@
 @import 'src/styles';
 
 .carousel-inner {
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: $blackBgColor;
     .img-slide {
         width: 100%;
         height: 65vh;
@@ -9,7 +9,6 @@
         object-fit: cover;
         object-position: 0% 63%;
         opacity: 0.6;
-        background-color: black;
     }
 }
 .carousel-control-prev, .carousel-control-next {
@@ -28,10 +27,11 @@
 
 // action buttons
 .ctaBtn-container {
+    height: 20vh;
     background-color: $blueBgColor;
     background: #3FA9F5 url("/assets/img/bg-pc-pattern.png") no-repeat 0px -25px;
     background-size: cover;
-    .ctaBtn {
+    button {
         font-size: $btnFontSize;
         font-weight: 500;
         background-color: $whiteFontColor;
@@ -39,6 +39,9 @@
         @include btnBoxShadow();
         &:hover {
             @include btnBoxShadowHover();
+        }
+        &:first-child {
+            width: 26%;
         }
     }
 }
