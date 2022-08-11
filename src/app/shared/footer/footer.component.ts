@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
   constructor(private scroller: ViewportScroller, private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate(["/"]);
   }
 
   scrollToHeader() {
