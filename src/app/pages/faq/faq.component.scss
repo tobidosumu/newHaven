@@ -7,18 +7,18 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-main{
-    margin: 130px 80px;
-    
-
-}
 section{
+    margin: 80px 80px;
+}
+main{
     display: flex;
     justify-content: space-between;
+    margin: 60px 0;
+
 }
 h1{
     color: #3FA9F5;
-    font-size: 45px;
+    font-size: 55px;
     letter-spacing: 1px;
 }
 
@@ -36,11 +36,14 @@ h1{
     width: 100%;
     border-radius: 50px;
     background-color: #fff;
+    border: 1px solid #000;
+
 }
 
 .searchForm:hover {
     border: 1px solid #000;
 }
+
 
 ::placeholder {
     color: #000;
@@ -61,8 +64,11 @@ h1{
     outline: none;
     border: none;
     border-radius: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
     padding-left: 5%;
 }
+
 
 .searchIcon {
     width: 38px;
@@ -81,32 +87,24 @@ h1{
 .faq{
     margin: 100px 0;
 }
-.dropdown {
-    width: 68%;
-    height: 46px;
-    font-size: 17px;
-    font-weight: bold;
-    background-color: #3fa9f570;
-    border: 1px solid #839bb1;
-    padding: 3.4% 45px;
-    border-radius: 50px;
-    font-family: 'Libre Franklin', sans-serif;
-    margin: 20px 0;
-}
-button{
-    font-weight: bold;
-    
-}
-
-.dropdown > button {
-    width: 100%;
+.accordion-item{
+    margin: 15px 0;
     border: none;
-    background: none;
+}
+.accordion-button{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card-body{
+    padding: 10px 0;
 }
 
-.dropdown > button > img {
-    width: 15px;
+	/* Custom style */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
 }
-#dropdown2{
-    width: 320%;
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
+  
