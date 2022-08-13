@@ -92,11 +92,15 @@ nav {
         input:focus { 
             box-shadow: none !important; 
         }
+        // search icon button
         span {
             width:45px; 
             height:45px; 
             margin-left:2px;
             background-color: $blueBgColor;
+            &:hover {
+                background-color: $transparentBlueBgColor;
+            }
         }
         
     }
@@ -112,6 +116,7 @@ nav {
             font-size: $navLinkFontSize;
             font-weight: 500;
             border: 1px solid $whiteBorder !important;
+            padding: 8px 20px;
             letter-spacing: 1px;
         }
         & > li > a:hover {
