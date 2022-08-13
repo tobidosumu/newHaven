@@ -92,11 +92,15 @@ nav {
         input:focus { 
             box-shadow: none !important; 
         }
+        // search icon button
         span {
             width:45px; 
             height:45px; 
             margin-left:2px;
             background-color: $blueBgColor;
+            &:hover {
+                background-color: $transparentBlueBgColor;
+            }
         }
         
     }
