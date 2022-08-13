@@ -112,6 +112,7 @@ nav {
             font-size: $navLinkFontSize;
             font-weight: 500;
             border: 1px solid $whiteBorder !important;
+            padding: 8px 20px;
             letter-spacing: 1px;
         }
         & > li > a:hover {
