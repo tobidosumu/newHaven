@@ -29,7 +29,7 @@
     background: $blueBgColor url("/assets/img/bg-pc-pattern.png") no-repeat 0px -25px;
     background-size: cover;
     button {
-        font-size: $btnFontSize;
+        font-size: $secondaryFontSize;
         font-weight: 500;
         background-color: $whiteFontColor;
         border: 1px solid $blueBorderColor;
@@ -50,7 +50,7 @@
         font-weight: 600;
     }
     h3 {
-        font-size: $btnFontSize;
+        font-size: $secondaryFontSize;
         @include myH3();
     }
     p {
