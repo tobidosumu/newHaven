@@ -4,7 +4,6 @@
     background: $whiteBgColor url("/assets/img/profilePageBg.png") no-repeat 230px -25px;
     background-attachment: fixed;
     background-size: cover;
-    // position: fixed;
     padding-bottom: 50px;
     & > .main {
         width: 65%;
@@ -23,9 +22,8 @@
                                 width: 20px;
                                 margin-right: 14px;
                             }
-
                         }
-                     } 
+                    } 
                 } 
             }
         }
