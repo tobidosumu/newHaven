@@ -1,17 +1,19 @@
-a, li {
+a, ul, li, body, h1, h2, h3, h4, h5, p {
     text-decoration: none;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 // variables
 $myFont: 'Roboto', sans-serif; 
-// body {font-family: 'Libre Franklin', sans-serif, 'Libre Baskerville', serif;}
 
 // font-sizes
-$secondaryFontSize: 1.2em;
-$navLinkFontSize: 1em;
-$btnFontSize: 1.2rem;
-$smallFont-size: 14px;
+$smallFont-size: .9rem;
+$navLinkFontSize: 1rem;
+$primaryFontSize: .95rem;
+$secondaryFontSize: 1.2rem;
+$tertiaryFontSize: 1.4rem;
 $subHeading: 1.5rem;
 
 // font-colors
@@ -27,7 +29,7 @@ $transparentRedBgColor: #ff1d25c7;
 $redBgColor: #ff1d25;
 $offWhiteBgColor: #f1f0f0bd;
 $menuBtnBgHover: #ffffff23;
-$transparentBlueBgColor: rgba(63, 169, 245, 0.8);
+$transparentBlueBgColor: hsla(205, 90%, 60%, 0.8);
 $blueBgColor: #3FA9F5;
 $blackBgColor: #000000;
 $cardBoxShadow: rgb(0 0 0 / 30%);

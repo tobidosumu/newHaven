@@ -1,0 +1,117 @@
+@import 'src/styles';
+
+.profile_container {
+    background: $whiteBgColor;
+    padding-bottom: 50px;
+    // left-hand div (main)
+    & > .main {
+        width: 65%;
+        & > .main_wrapper {
+            & > .heroWrapper {
+                    & > .userBioWrapper {
+                        margin-top: -60px;
+                    & > img {
+                        width: 115px;
+                        border-radius: 50%;
+                        border: 3px solid $whiteBorder;
+                    }
+                }
+            }
+            & > p {
+                font-size: $secondaryFontSize;
+            }
+            & > .detailsWrapper {
+                & > div {
+                    & > ul:first-child {
+                        & > li {
+                            font-size: $navLinkFontSize;
+                            & > img {
+                                width: 22px;
+                                margin-right: 14px;
+                            }
+                        }
+                    } 
+                    & > ul:nth-child(2) {
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;                
+                        & > li > a > img {
+                            width: 25px;
+                            &:hover {
+                                padding: 2px;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    // right-hand div (minor) 
+    & > .minor {
+        width: 35%;
+    & > .stickySideBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            top: $headerHeight;
+            width: 78%;
+            height: 500px;
+            box-shadow: 0px 3px 2px #00000034;
+            background-color: $whiteBgColor;
+            padding: 20px;
+            border-radius: 20px;
+            z-index: 0;
+            & > p:first-child {
+                color: $blackFontColor;
+                font-size: $smallFont-size;
+            }
+            // edit and favorites button
+            & > .ctaBtn {
+                border: none;
+                margin: 0 auto;
+                width: 90%;
+                height: 60px;
+                font-size: $primaryFontSize;
+                font-weight: 500;
+                letter-spacing: 1px;
+                border-radius: 50px;
+                color: $blackFontColor;
+                background-color: $whiteBgColor;
+                box-shadow: 0px 0px 2px 1px #00000034;
+                &:hover {
+                    background-color: $offWhiteBgColor;
+                }
+            }
+            // suggestedCharitiesWrapper
+            & > .suggestedCharitiesWrapper {
+                h3 {
+                    font-size: $secondaryFontSize;
+                }
+                & > .suggestedCharity {
+                    & > div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end !important;
+                        img {
+                            width: 98%;
+                            border-radius: 7px;
+                            margin: auto;
+                        }
+                        img:nth-child(2) {
+                            position: absolute;
+                            bottom: 90px;
+                            right: 45px;
+                            width: 22px;
+                        }
+                    }
+                    p {
+                        color: $blackFontColor;
+                        font-size: $smallFont-size;
+                    }
+                }
+            }
+            
+        }
+    }
+}

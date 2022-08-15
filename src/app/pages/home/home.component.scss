@@ -5,14 +5,12 @@
     .img-slide {
         width: 100%;
         height: 65vh;
-        margin-top: 110px;
         object-fit: cover;
         object-position: 0% 63%;
         opacity: 0.6;
     }
 }
 .carousel-control-prev, .carousel-control-next {
-        margin-top: 110px;
         opacity: 0;
         &:hover {
             opacity: 1;
@@ -28,11 +26,10 @@
 // action buttons
 .ctaBtn-container {
     height: 20vh;
-    background-color: $blueBgColor;
-    background: #3FA9F5 url("/assets/img/bg-pc-pattern.png") no-repeat 0px -25px;
+    background: $blueBgColor url("/assets/img/bg-pc-pattern.png") no-repeat 0px -25px;
     background-size: cover;
     button {
-        font-size: $btnFontSize;
+        font-size: $secondaryFontSize;
         font-weight: 500;
         background-color: $whiteFontColor;
         border: 1px solid $blueBorderColor;
@@ -53,7 +50,7 @@
         font-weight: 600;
     }
     h3 {
-        font-size: $btnFontSize;
+        font-size: $secondaryFontSize;
         @include myH3();
     }
     p {

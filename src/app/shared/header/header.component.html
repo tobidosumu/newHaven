@@ -1,4 +1,4 @@
-<nav id="targetHeader" class="navbar navbar-expand-md bg-white px-5 shadow-sm fixed-top">
+<nav id="targetHeader" class="navbar navbar-expand-md bg-white px-5 shadow-sm sticky-top">
   <div class="container-fluid">
 
     <!-- navbar is bootstrap's logo class -->
@@ -23,7 +23,7 @@
               type="button" 
               class="catBtn btn py-2 px-3 rounded-end rounded-pill">
               Categories
-              <img src="./../../../assets/img/icons/chevron_down.png">
+              <img src="assets/img/icons/chevron_down.png">
             </button>
 
             <!-- search dropdwon container -->
@@ -36,7 +36,7 @@
                   <li><a href="#"><img src="assets/img/icons/trendingDropdown.png" class="trending-icon">Trending</a></li>
                   <li><a href="#"><img src="assets/img/icons/religiousDropdown.png">Religious</a></li>
                   <li><a href="#"><img src="assets/img/icons/sportsDropdown.png">Sports</a></li>
-                  <li><a href="../../pages/wildlife-cat"><img src="assets/img/icons/wildlifeDropdown.png">Wildlife</a></li>
+                  <li><a href="../../wildlife-cat"><img src="assets/img/icons/wildlifeDropdown.png">Wildlife</a></li>
                   <li><a href="#"><img src="assets/img/icons/individualsDropdown.png">Individuals</a></li>         
                 </ul>
               </div>
@@ -44,7 +44,7 @@
 
           </div>
           <input type="text" class="form-control border border-secondary border-0 border-start" placeholder="...search for a charity">
-          <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="../assets/img/icons/magnifying_lens.png" class="img-fluid"></a></span>
+          <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/img/icons/magnifying_lens.png" class="img-fluid"></a></span>
         </div>
       </form>
     </div>
@@ -53,7 +53,7 @@
     <div class="col-sm-4 collapse navbar-collapse justify-content-between" id="mynavbar">
       <ul class="btnGroup navbar-nav ms-3 justify-content-between">
         <li class="nav-item">
-          <a routerLink="/pages/donation" class="nav-link border rounded-pill text-black px-3 me-3">CREATE</a>
+          <a routerLink="/donation" class="nav-link border rounded-pill text-black px-3 me-3">CREATE</a>
         </li>
         <li></li> <!-- vertical divide line -->
         <li class="nav-item">
@@ -79,12 +79,12 @@
         *ngIf="ShowUserMenu"
         class="userSignup-container d-flex align-items-center flex-column">
         <div class="PhotoName-wrapper d-flex align-items-center justify-content-center flex-column">
-          <a routerLink="/pages/profile"><img class="img-fluid" src="./assets/img/moji.png"></a>
-          <p class="py-3"><a routerLink="/pages/profile">Mojisola Badmus</a></p>
+          <a routerLink="/user-profile"><img class="img-fluid" src="assets/img/moji.png"></a>
+          <p class="py-3"><a routerLink="/user-profile">Mojisola Badmus</a></p>
           <ul class="nav-item p-0 justify-content-center">
             <a routerLink="/auth/login"><li class="nav-item py-2">Login</li></a>
             <a routerLink="/auth/sign-up"><li class="nav-item py-2">Sign up</li></a>
-            <a routerLink="/pages/faq"><li class="nav-item py-2">F.A.Q.</li></a>          
+            <a routerLink="/faq"><li class="nav-item py-2">F.A.Q.</li></a>          
           </ul>
         </div>
       </div>
