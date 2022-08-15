@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CatPagesComponent } from './cat-pages/cat-pages.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
@@ -8,7 +7,6 @@ const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: '', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
   { path: 'shared', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
-  { path: 'cat-pages', loadChildren: () => import('./cat-pages/cat-pages.module').then(m => m.CatPagesModule) },
 ];
 
 @NgModule({
