@@ -11,7 +11,7 @@ div.nav {
 .content {
     position: relative;
     top: 30%;
-    left: 4%;
+    left: 4.05%;
 }
 
 a {
@@ -22,19 +22,24 @@ a {
    margin-right: 30; 
    font-weight: 400;
    font-size: small;
+   font-style: italic;
 }
 
 .current {
-   margin-left: 28px;
-   font-weight: 400;
-   font-size: small;
+   margin-left: 29px;
 }
 
 .divider {
-    position: absolute;
-    left: 50%;
-    top: 0%;
+    position: fixed;
+    left: 7.85%;
+    
     border: solid white;
     border-width: 0 1.5px 0 0;
     height: 30px;
+}
+
+i {
+    color: white;
+    font-weight: 400;
+    font-size: small;
 }
