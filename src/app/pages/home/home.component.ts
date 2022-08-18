@@ -9,7 +9,13 @@ import { Router } from '@angular/router'
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private scroller: ViewportScroller, private router: Router) { }
+  constructor(private scroller: ViewportScroller, private router: Router) {
+    // this.toggleHeart = true;
+  }
+
+  // toggleHeart() {
+  //   return this.toggleHeart;
+  // }
 
   ngOnInit(): void {
     this.router.navigate(["/"]);
@@ -23,4 +29,30 @@ export class HomeComponent implements OnInit {
     this.scroller.scrollToAnchor("ourstory");
   }
 
+  charities = [
+    {
+    title:"Help the children of Ukraine",
+    detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
+    img:"assets/img/african_boy.png",
+    alt:"how your donations used in Ukraine"
+    },
+    {
+      title:"Help the children of Ukraine",
+      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
+      img:"assets/img/african_boy.png",
+      alt:"how your donations used in Ukraine"
+    },
+    {
+      title:"Help the children of Ukraine",
+      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
+      img:"assets/img/african_boy.png",
+      alt:"how your donations used in Ukraine"
+    },
+    {
+      title:"Help the children of Ukraine",
+      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
+      img:"assets/img/african_boy.png",
+      alt:"how your donations used in Ukraine"
+    }
+  ]
 }

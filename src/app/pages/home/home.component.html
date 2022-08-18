@@ -99,62 +99,76 @@
 
     <!-- middle list-items inner-container  -->
     <ul class="categoryMenu col-sm-4 navbar-nav d-flex justify-content-between align-items-center flex-row">
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/trending.svg" style="width:33px">
-            <p>Trending</p>
-          </a>
-        </li>
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/religious_building.svg">
-            <p>Religious</p>
-          </a>
-        </li>
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/bike.svg">
-            <p>Sports</p>
-          </a>
-        </li>
-        <li class="menuBtn activeBtn nav-item d-flex justify-content-between">
-          <a class="nav-link" href="#"><img src="assets/img/icons/paw_print_selected.svg">
-            <p>Wildlife</p>
-          </a>
-        </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/img/icons/trending.svg" style="width:33px">
+          <p>Trending</p>
+        </a>
+      </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/img/icons/religious_building.svg">
+          <p>Religious</p>
+        </a>
+      </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/img/icons/bike.svg">
+          <p>Sports</p>
+        </a>
+      </li>
+      <li class="menuBtn activeBtn nav-item d-flex justify-content-between">
+        <a class="nav-link" href="#"><img src="assets/img/icons/paw_print_selected.svg">
+          <p>Wildlife</p>
+        </a>
+      </li>
     </ul>
 
     <!-- right-side list-items inner-container  -->
     <ul class="col-sm-4 navbar-nav d-flex justify-content-around flex-row flex-row-reverse pe-3">
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/foot_prints.svg">
-            <p>Individuals</p>
-          </a>
-        </li>
-        <li class="menuNavBtn nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="#"><img src="assets/img/icons/blue_chevron_right.svg"></a>
-        </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/img/icons/foot_prints.svg">
+          <p>Individuals</p>
+        </a>
+      </li>
+      <li class="menuNavBtn nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#"><img src="assets/img/icons/blue_chevron_right.svg"></a>
+      </li>
     </ul>
-
-  
-</div>
+  </div>
 
   <!-- causes card container -->
   <div class="causes-container">
-    <!-- cause card -->
-    <div class="d-flex justify-content-between">
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-    </div>
-
-    <!-- cause card -->
-    <div class="d-flex justify-content-center align-items-center pt-4">
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
+    <div class="d-flex px-4 justify-content-between">
+      <a routerLink="/profile" 
+        class="cardContainer card border-0 text-decoration-none" 
+        *ngFor="let charity of charities">
+        <img src="{{ charity.img }}" alt="{{ charity.alt }}">
+        <div class="card-img-overlay align-items-center d-flex flex-row-reverse pe-4">
+          <i class="bi bi-heart-fill mt-4"></i>
+        </div>
+        <div class="cardBody mt-3">
+          <h4>{{charity.title}}</h4>
+          <p class="mt-1">{{charity.detail}}</p>
+        </div>
+      </a>
     </div>
   </div>
-  <p id="ourstory" style="margin-bottom: 6rem"></p>
+
+  <!-- pagination -->
+  <nav class="d-flex justify-content-center" aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link p-2 px-3">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link p-2 px-3" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link p-2 px-3" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link p-2 px-3" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link p-2 px-3" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <p id="ourstory" style="margin-bottom: 6rem"></p> -->
 </div>
 
 <!-- our story -->

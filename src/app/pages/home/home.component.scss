@@ -92,7 +92,35 @@
     .causes-container {
         width: 100%;
         padding: 4%;
-        background-color: $offWhiteBgColor;
+        .cardContainer {
+            width: 23.5%;
+            background: none;            
+            border-radius: 10px;
+            img {
+                border-radius: 10px;
+            }
+            div {
+                .bi-heart-fill {
+                    font-size: 18px;
+                    color: $redBgColor;
+                }
+            }
+            .cardBody {
+                h4 {
+                    color: $blackFontColor;
+                    font-size: $navLinkFontSize;
+                }
+                p {
+                    text-align: justify;
+                    line-height: 1.1rem;
+                    color: $paragraphFontColor;
+                    font-size: $smallFont-size;
+                } 
+            }
+            &:hover {
+                background-color: $offWhiteBgColor;
+            }
+        }
     }
 }
 
