@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -9,13 +9,14 @@ import { Router } from '@angular/router'
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private scroller: ViewportScroller, private router: Router) { }
+  constructor(private scroller: ViewportScroller, private router: Router) {
+  }
 
   ngOnInit(): void {
   }
 
-  scrollToHeader() {
-    this.scroller.scrollToAnchor("targetHeader");
+  scrollToTop() {
+    window.scrollTo(0, 0);
   }
 
   scrollTostory() {

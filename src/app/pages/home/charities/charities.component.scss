@@ -1,0 +1,32 @@
+@import 'src/styles';
+
+.cardContainer {
+    width: 90%;
+    background: none;            
+    border-radius: 10px;
+    border: 1px solid red;
+    img {
+        border-radius: 10px;
+    }
+    div {
+        .bi-heart-fill {
+            font-size: 18px;
+            color: $redBgColor;
+        }
+    }
+    .cardBody {
+        h4 {
+            color: $blackFontColor;
+            font-size: $navLinkFontSize;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.1rem;
+            color: $paragraphFontColor;
+            font-size: $smallFont-size;
+        } 
+    }
+    &:hover {
+        background-color: $offWhiteBgColor;
+    }
+}

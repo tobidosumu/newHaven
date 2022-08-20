@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import { Router } from '@angular/router'
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +9,28 @@ import { Router } from '@angular/router'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  query: string;
+  charity: any;
+  @Input() charities : any;
 
-  constructor(private scroller: ViewportScroller, private router: Router) {
-    // this.toggleHeart = true;
+  showCharity(item: any) {
+    this.query = item.title;
+    item.highlight = !item.highlight;
   }
 
-  // toggleHeart() {
-  //   return this.toggleHeart;
-  // }
+  constructor(private scroller: ViewportScroller, private http: HttpClient, private router: Router) {
+    this.query = '';  
+  }
 
   ngOnInit(): void {
     this.router.navigate(["/"]);
+    this.http.get<Object>('../../../assets/data.json').subscribe(
+    data => {
+        this.charities = data;
+    })
   }
+
+
 
   scrollToCategory() {
     this.scroller.scrollToAnchor("targetCategory");
@@ -29,30 +40,4 @@ export class HomeComponent implements OnInit {
     this.scroller.scrollToAnchor("ourstory");
   }
 
-  charities = [
-    {
-    title:"Help the children of Ukraine",
-    detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
-    img:"assets/img/african_boy.png",
-    alt:"how your donations used in Ukraine"
-    },
-    {
-      title:"Help the children of Ukraine",
-      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
-      img:"assets/img/african_boy.png",
-      alt:"how your donations used in Ukraine"
-    },
-    {
-      title:"Help the children of Ukraine",
-      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
-      img:"assets/img/african_boy.png",
-      alt:"how your donations used in Ukraine"
-    },
-    {
-      title:"Help the children of Ukraine",
-      detail: "We explain what's at stake, what lies behind Russia's thinking and what might happen...",
-      img:"assets/img/african_boy.png",
-      alt:"how your donations used in Ukraine"
-    }
-  ]
 }
