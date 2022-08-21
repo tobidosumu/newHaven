@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap');
+
+div {
+    position: relative;
+    padding: 60px 55px 60px 55px;
+}
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #3FA9F5;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #3FA9F5;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.bgButton {
+    position: absolute;
+    top: 100%;
+    height: 60px;
+    width: 250px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    background-color: #3FA9F5;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.whiteLine {
+    position: absolute;
+    height: 40px;
+    top: 102.6%;
+    width: 230px;
+    left: 4.37%;
+    border: solid white;
+    border-radius: 100px;
+    background-color:opacity($color: #000000);
+    padding: 10px 10px 10px 10px;
+}
+
+button {
+    position: absolute;
+    top: 100%;
+    height: 60px;
+    width: 250px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    background-color: transparent;
+    padding: 10px 10px 10px 10px;
+}
+
+img {
+    position: absolute;
+    height: 400px;
+    right: 4%;
+    top: 22.6%;
+}

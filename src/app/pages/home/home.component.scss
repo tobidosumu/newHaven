@@ -1,5 +1,7 @@
 @import 'src/styles';
-
+.home {
+    width: 100vw;
+}
 .carousel-inner {
     background-color: $blackBgColor;
     .img-slide {
