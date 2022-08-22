@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatSliderModule } from '@angular/material/slider';
+import { MaterialModule } from './material/material.module';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -21,7 +21,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SharedModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    // MatSliderModule,
+    MaterialModule
 
   ],
   providers: [],
