@@ -102,7 +102,6 @@ nav {
                 background-color: $transparentBlueBgColor;
             }
         }
-        
     }
     .vl {
         height: 30px;
@@ -112,7 +111,6 @@ nav {
     // listed link items
     .btnGroup {
         & > li > a {
-            // margin-left: 30px;
             font-size: $navLinkFontSize;
             font-weight: 500;
             border: 1px solid $whiteBorder !important;
@@ -138,7 +136,7 @@ nav {
     /* user profile dropdown starts here */
     .userSignup-container {
         @include dropdown();
-        height: 320px;
+        height: 305px;
         top: 100px;
         right: 4.5%;
     }

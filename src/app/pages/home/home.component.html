@@ -1,85 +1,86 @@
 <app-header></app-header>
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+  </div>
+</section>
 
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo" class="carousel slide" data-bs-ride="carousel"><!-- Carousel -->
 
-  <!-- Indicators/dots -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-  </div>
+  </div><!-- Indicators/dots -->
   
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="assets/img/slides/how_your_donations_benefit_children_in_the_Philipines.jpg" alt="how your donations benefit children in the Philippines" class="img-slide d-block">
+      <img src="assets/images/slides/how_your_donations_benefit_children_in_the_Philipines.jpg" alt="how your donations benefit children in the Philippines" class="img-slide d-block">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/slides/how_your_donations_benefit_children_in_Nigeria.jpeg" alt="how your donations benefit children in Nigeria" class="img-slide d-block">
+      <img src="assets/images/slides/how_your_donations_benefit_children_in_Nigeria.jpeg" alt="how your donations benefit children in Nigeria" class="img-slide d-block">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/slides/how_your_donations_used_in_Ukraine.jpg" alt="how your donations used in Ukraine" class="img-slide d-block">
+      <img src="assets/images/slides/how_your_donations_used_in_Ukraine.jpg" alt="how your donations used in Ukraine" class="img-slide d-block">
     </div>
     <div class="carousel-item">
-      <img src="assets/img/slides/how_your_donations_are_putting_a_smile_on_the_faces_of_DRC_children.jpg" alt="how your donations are putting a smile on the faces of DRC children" class="img-slide d-block">
+      <img src="assets/images/slides/how_your_donations_are_putting_a_smile_on_the_faces_of_DRC_children.jpg" alt="how your donations are putting a smile on the faces of DRC children" class="img-slide d-block">
     </div>
   </div>
   
-  <!-- Left and right controls/icons -->
   <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
-  </button>
+  </button><!-- Left big arrow -->
   <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </button>
+  </button><!-- Right big arrow -->
+</div><!-- Carousel -->
 
-</div>
-
-<!-- call-to-action-buttons (ctaBtn) container -->
-<div class="ctaBtn-container container-fluid py-3 px-5">
+<div class="ctaBtn-container container-fluid py-3 px-5"><!-- call-to-action-buttons (ctaBtn) container -->
   <div class="col-sm-12 w-75 d-flex justify-content-between m-auto p-4">
     <button onclick="document.location='/pages/donation'" class="rounded-pill btn px-5 py-3 btn-lg">Create Cause</button>
     <button (click)="scrollToCategory()" class="rounded-pill btn px-5 py-3 btn-lg">Make Donation</button>
   </div>
-</div>
+</div><!-- call-to-action-buttons (ctaBtn) container -->
 
 <!-- steps to donate container -->
-<div class="donateStep-container container-fluid d-flex flex-column align-items-center mb-5 py-5 px-5">
-  <h1 class="d-flex text-uppercase py-5 mb-2">Transform a life today</h1>
+<div class="donateStep-container container-fluid d-flex flex-column align-items-center mb-5 p-5">
+  <h1 class="d-flex text-uppercase py-4 mb-5">Heal The World</h1>
 
-  <div class="container-fluid d-flex justify-content-between mt-5">
-    
-    <!-- step one -->
-    <div class="card col-sm-4 border border-0">
-      <img class="card-img-top" src="assets/img/icons/blue_circle.png">
-      <div class="d-flex flex-column justify-content-center card-img-overlay mt-5 ps-5">
-        <h3 class="card-title">Spark the lighter</h3>
-        <p class="card-text">Create an account</p>
+  <div class="container-fluid d-flex justify-content-between mt-5"><!-- inner wrapper -->
+    <div class="card col-sm-4 border border-0 align-items-start"><!-- step one -->
+      <img class="card-img-top ms-5" src="assets/images/icons/blue_circle.png">
+      <div class="d-flex flex-column justify-content-center align-items-end card-img-overlay mt-3 me-5">
+        <h3 class="card-title">Spark the light</h3>
+        <p class="card-text me-3">Create an account</p>
       </div>
-    </div>
+    </div><!-- step one -->
 
-    <!-- step two -->
-    <div class="card col-sm-4 border border-0">
-      <img class="card-img-top" src="assets/img/icons/blue_circle.png">
-      <div class="d-flex flex-column justify-content-center card-img-overlay mt-5 ps-5">
-        <h3 class="card-title">Look for needs</h3>
-        <p class="card-text">We will guide you</p>
+    <div class="card col-sm-4 border border-0 align-items-center"><!-- step two -->
+      <img class="card-img-top me-5" src="assets/images/icons/blue_circle.png">
+      <div class="d-flex flex-column justify-content-center align-items-end card-img-overlay mt-5">
+        <h3 class="card-title ms-4">Look for needs</h3>
+        <p class="card-text mb-5 me-6">We will guide you</p>
       </div>
-    </div>
+    </div><!-- step two -->
 
-    <!-- step three -->
-    <div class="card col-sm-4 border border-0">
-      <img class="card-img-top" src="assets/img/icons/pink_circle.png">
-      <div class="d-flex flex-column justify-content-center card-img-overlay mt-5 ps-5">
-        <h3 class="card-title">Change lives</h3>
-        <p class="card-text">Find a passion to sponsor</p>
+    <div class="card col-sm-4 border border-0 align-items-center"><!-- step three -->
+      <img class="card-img-top me-4" src="assets/images/icons/pink_circle.png">
+      <div class="d-flex flex-column justify-content-center align-items-end card-img-overlay ms-6 pe-4 mt-5">
+        <h3 class="card-title me-4">Touch a soul</h3>
+        <p class="card-text mb-5 me-3">Support humanity</p>
       </div>
-    </div>
-  </div>
-  <p id="targetCategory" style="margin-bottom: 1.8rem"></p>
-</div>
+    </div><!-- step three -->
+  </div><!-- inner wrapper -->
+  <p id="targetCategory" style="margin-bottom: 1.6rem"></p>
+</div><!-- steps to donate container -->
 
 <!-- category container -->
 <div class="category-container">
@@ -88,73 +89,80 @@
     <!-- left-side list-items inner-container  -->
     <ul class="col-sm-4 navbar-nav d-flex justify-content-around flex-row">
         <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/favorite.svg">
+          <a class="nav-link" href="#"><img src="assets/images/icons/favorite.svg">
             <p>Favorites</p>
           </a>
         </li>
         <li class="menuNavBtn nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link disabled" href="#"><img src="assets/img/icons/blue_chevron_left.svg"></a>
+          <a class="nav-link disabled" href="#"><img src="assets/images/icons/blue_chevron_left.svg"></a>
         </li>
     </ul>
 
     <!-- middle list-items inner-container  -->
     <ul class="categoryMenu col-sm-4 navbar-nav d-flex justify-content-between align-items-center flex-row">
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/trending.svg" style="width:33px">
-            <p>Trending</p>
-          </a>
-        </li>
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/religious_building.svg">
-            <p>Religious</p>
-          </a>
-        </li>
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/bike.svg">
-            <p>Sports</p>
-          </a>
-        </li>
-        <li class="menuBtn activeBtn nav-item d-flex justify-content-between">
-          <a class="nav-link" href="#"><img src="assets/img/icons/paw_print_selected.svg">
-            <p>Wildlife</p>
-          </a>
-        </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/images/icons/trending.svg" style="width:33px">
+          <p>Trending</p>
+        </a>
+      </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/images/icons/religious_building.svg">
+          <p>Religious</p>
+        </a>
+      </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/images/icons/bike.svg">
+          <p>Sports</p>
+        </a>
+      </li>
+      <li class="menuBtn activeBtn nav-item d-flex justify-content-between">
+        <a class="nav-link" href="#"><img src="assets/images/icons/paw_print_selected.svg">
+          <p>Wildlife</p>
+        </a>
+      </li>
     </ul>
 
     <!-- right-side list-items inner-container  -->
     <ul class="col-sm-4 navbar-nav d-flex justify-content-around flex-row flex-row-reverse pe-3">
-        <li class="menuBtn nav-item">
-          <a class="nav-link" href="#"><img src="assets/img/icons/foot_prints.svg">
-            <p>Individuals</p>
-          </a>
-        </li>
-        <li class="menuNavBtn nav-item d-flex flex-column justify-content-center">
-          <a class="nav-link" href="#"><img src="assets/img/icons/blue_chevron_right.svg"></a>
-        </li>
+      <li class="menuBtn nav-item">
+        <a class="nav-link" href="#"><img src="assets/images/icons/foot_prints.svg">
+          <p>Individuals</p>
+        </a>
+      </li>
+      <li class="menuNavBtn nav-item d-flex flex-column justify-content-center">
+        <a class="nav-link" href="#"><img src="assets/images/icons/blue_chevron_right.svg"></a>
+      </li>
     </ul>
-
-  
-</div>
-
-  <!-- causes card container -->
-  <div class="causes-container">
-    <!-- cause card -->
-    <div class="d-flex justify-content-between">
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-    </div>
-
-    <!-- cause card -->
-    <div class="d-flex justify-content-center align-items-center pt-4">
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-      <app-cause-card></app-cause-card>
-    </div>
   </div>
-  <p id="ourstory" style="margin-bottom: 6rem"></p>
+
+  <div class="causes-container"><!-- charities section -->
+    <div class="d-flex px-4 justify-content-between">
+      <a routerLink="/profile" 
+        *ngFor="let charity of (charities)"
+        (click)="showCharity(charity)"
+        [style.backgroundColor]="charity.highlight ? '#EEE' : '#FFF'">
+        <app-charities [charity]="charity"></app-charities>
+      </a><!-- link -->
+    </div><!-- list-group -->
+
+    <nav class="d-flex justify-content-center mt-5" aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link p-2 px-3">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link p-2 px-3" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link p-2 px-3" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link p-2 px-3" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link p-2 px-3" href="#">Next</a>
+        </li>
+      </ul>
+    </nav><!-- pagination -->
+  </div><!-- list-group container -->
+
+  <p id="ourstory" style="margin-bottom: 7rem"></p>
 </div>
 
 <!-- our story -->
@@ -174,31 +182,31 @@
 </div>
 
 <!-- meet the team -->
-<div class="meetTeam-container d-flex flex-column align-items-center">
+<div class="meetTeam-container d-flex flex-column align-items-center pt-5">
   <h1>MEET THE TEAM RESPONSIBLE</h1>
-  <h3>We are dedicated to making the world better!</h3>
+  <h3 class="mt-3">We are dedicated to making the world better!</h3>
 
-  <div class="teamDetails d-flex justify-content-between m-auto">
+  <div class="teamDetails d-flex justify-content-between m-auto mt-4">
     <div>
-      <img src="./assets/img/adenike_magret1.jpeg" alt="Adenike Margaret">
+      <img src="./assets/images/adenike_magret1.jpeg" alt="Adenike Margaret">
       <h3>Adenuga Adenike</h3>
       <p><a href="tel:+2347011684833">+234 701 168 4833</a></p> 
     </div>
     
     <div>
-      <img src="./assets/img/joshua_obi.jpeg" alt="Joshua Obi">
+      <img src="./assets/images/joshua_obi.jpeg" alt="Joshua Obi">
       <h3>Joshua Obi</h3>
       <p><a href="tel:+2347087870270">+234 708 787 0270</a></p> 
     </div>
 
     <div>
-      <img src="./assets/img/Oloruntobi_Ogundosumu_A_Fullstack_Developer.jpg" alt="Ogundosumu Oloruntobi Ayodele">
+      <img src="./assets/images/Oloruntobi_Ogundosumu_A_Fullstack_Developer.jpg" alt="Ogundosumu Oloruntobi Ayodele">
       <h3>Oloruntobi Ogundosumu A.</h3>
       <p><a href="tel:+2348104630366">+234 810 463 0366</a></p> 
     </div>
 
     <div>
-      <img src="./assets/img/ayodeji_ogunremi.jpg" alt="Ayodeji Ogunremi">
+      <img src="./assets/images/ayodeji_ogunremi.jpg" alt="Ayodeji Ogunremi">
       <h3>Ayodeji Ogunremi M.</h3>
       <p><a href="tel:+2348105120765">+234 810 512 0765</a></p> 
     </div>

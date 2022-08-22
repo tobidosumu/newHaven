@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import { Router } from '@angular/router'
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,28 @@ import { Router } from '@angular/router'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  query: string;
+  charity: any;
+  @Input() charities : any;
 
-  constructor(private scroller: ViewportScroller, private router: Router) { }
+  showCharity(item: any) {
+    this.query = item.title;
+    item.highlight = !item.highlight;
+  }
+
+  constructor(private scroller: ViewportScroller, private http: HttpClient, private router: Router) {
+    this.query = '';  
+  }
 
   ngOnInit(): void {
     this.router.navigate(["/"]);
+    this.http.get<Object>('../../../assets/data.json').subscribe(
+    data => {
+        this.charities = data;
+    })
   }
+
+
 
   scrollToCategory() {
     this.scroller.scrollToAnchor("targetCategory");
