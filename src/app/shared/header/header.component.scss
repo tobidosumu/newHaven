@@ -1,8 +1,8 @@
 @import 'src/styles';
 
-// The styles below apply to search bar. catBtn refers to the category button inside the search bar 
-nav {
+header {
     height: $headerHeight;
+    background-color: $bgWhite;
     .catBtn {
         height: 45px;
         border: none;
@@ -10,9 +10,7 @@ nav {
             border: none;
         }
     }
-
-    // search bar
-    form {
+    form { // search input field
         button {
             img {
                 width: 12px;
@@ -25,9 +23,7 @@ nav {
         .input-group .btn:focus {
             background-color: $offWhiteBgColor;
         } 
-
-        // search dropdown container
-        .searchDropdown-container {
+        .searchDropdown-container {// search dropdown container
             width: 100%;
             padding: 4%;
             @include dropdown();
@@ -40,9 +36,9 @@ nav {
             & > div {
                 width: 100%;
                 overflow-y: scroll;
-                box-shadow: 
-                inset 0px 11px 8px -10px $transparentBlueBgColor,
-                inset 0px -11px 8px -10px $transparentBlueBgColor;
+                // box-shadow: 
+                // inset 0px 11px 8px -10px $transparentBlueBgColor,
+                // inset 0px -11px 8px -10px $transparentBlueBgColor;
                 border-radius: 5px;
                 ul {
                     width: 100%;
@@ -88,9 +84,11 @@ nav {
         }
         & > button:first-child {
             font-size: $secondaryFontSize;
-        }
-        input:focus { 
-            box-shadow: none !important; 
+        } input {
+            background-color: $whiteBgColor;
+            &:focus { 
+                box-shadow: none !important; 
+            }
         }
         // search icon button
         span {
@@ -108,13 +106,13 @@ nav {
         border-left: 1px solid $primaryBorderColor;
     }
 
-    // listed link items
+    // create and donate buttons
     .btnGroup {
         & > li > a {
             font-size: $navLinkFontSize;
             font-weight: 500;
             border: 1px solid $whiteBorder !important;
-            padding: 8px 20px;
+            padding: 3px 15px;
             letter-spacing: 1px;
         }
         & > li > a:hover {

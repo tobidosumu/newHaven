@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  isDarkTheme: boolean = true;
   query: string;
   charity: any;
   @Input() charities : any;
@@ -27,7 +28,12 @@ export class HeaderComponent implements OnInit {
     this.http.get<Object>('../../../assets/data.json').subscribe(
       data => {
           this.charities = data;
-    })
+    });
+    this.isDarkTheme = localStorage.getItem('theme') === "Dark" ? true : false;
+  }
+
+  storeThemeSelection() {
+    localStorage.setItem('theme',this.isDarkTheme?"Dark":"Light");
   }
 
   showCharities(){

@@ -1,6 +1,5 @@
-<nav class="navbar navbar-expand-md bg-white px-5 shadow-sm sticky-top">
+<header class="navbar navbar-expand-md px-5 shadow-sm mat-app-background sticky-top" [ngClass]="{'dark-theme-mode':isDarkTheme}">
   <div class="container-fluid">
-
     <div class="col-sm-3">
       <a routerLink="" routerLinkActive="active" class="navbar-brand">
         <img src="assets/images/havenDesktopLogo.png" alt="Haven charity logo" style="width:95px;">
@@ -41,26 +40,30 @@
           <input type="text" (focus)="showCharities()" 
             class="form-control border border-secondary border-0 border-start" 
             placeholder="...search for a charity"
-            [(ngModel)]="query">
-          <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/images/icons/magnifying_lens.png" class="img-fluid"></a></span>
+            [(ngModel)]="query"> <!--search input field-->
+          <span class="rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/images/icons/magnifying_lens.png" class="img-fluid"></a></span>
         </div>
       </form>
-    </div><!-- search bar -->
+    </div>
 
     <div class="col-sm-4 collapse navbar-collapse justify-content-between" id="mynavbar">
       <ul class="btnGroup navbar-nav ms-3 justify-content-between">
         <li class="nav-item">
-          <a routerLink="/donation" class="nav-link border rounded-pill text-black px-3 me-3">CREATE</a>
+          <a routerLink="/donation" mat-flat-button class="rounded-pill me-3">CREATE</a>
+          <!-- <a routerLink="/donation" class="nav-link border rounded-pill text-black px-3 me-3">CREATE</a> -->
         </li>
         <li></li> <!-- vertical divide line -->
         <li class="nav-item">
-          <a routerLink="" class="nav-link border rounded-pill text-black px-3 ms-3" (click)="scrollToCategory()">DONATE</a>
+          <a mat-flat-button class="rounded-pill ms-3" (click)="scrollToCategory()">DONATE</a>
+          <!-- <a routerLink="" class="nav-link border rounded-pill text-black px-3 ms-3" (click)="scrollToCategory()">DONATE</a> -->
         </li>
       </ul>
 
       <div class="btnGroup justify-content-between">
-        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/images/icons/night_mode.png" class="p-1" style="width:23px; height:25px; margin:0px 2px;"></button>
-       
+        <!-- <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/images/icons/night_mode.png" class="p-1" style="width:23px; height:25px; margin:0px 2px;"></button>        -->
+        <button mat-mini-fab aria-label="dark mode" color="navBtn" class="me-3" style="box-shadow: none;">
+          <mat-slide-toggle [(ngModel)]="isDarkTheme" (change)="storeThemeSelection()"><mat-icon class="darkModeIcon">bedtime</mat-icon></mat-slide-toggle>
+        </button>
         <button 
           (click)="toggleUserMenu()" 
           type="button" 
@@ -85,4 +88,4 @@
       </div><!-- user signup & login dropdown menu  -->
     </div><!-- listed link items -->
   </div>
-</nav>
+</header>

@@ -45,6 +45,7 @@
 
 // donation steps
 .donateStep-container {
+    background-color: $whiteBgColor;
     h1 {
         @include myH1();
         font-weight: 600;
@@ -98,7 +99,7 @@
 
 // our story
 .ourStory-container {
-    background: #ffffff url("/assets/images/aboutUsBg.png") no-repeat 0px -40px;
+    background: $bgWhite url("/assets/images/aboutUsBg.png") no-repeat 0px -40px;
     background-attachment: fixed;
     background-size: cover;
     padding: 5%;
