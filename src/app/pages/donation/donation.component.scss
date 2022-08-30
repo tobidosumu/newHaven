@@ -1,19 +1,14 @@
 
   body {
-    margin: 30px 0;
+    margin: 80px 0;
     position: absolute;
+    background: url("../../../assets/img/signin circle.png") no-repeat 500% 0% fixed;
     font-family: "Libre Franklin", sans-serif, "Libre Baskerville", serif;
     padding: 25px 80px;
   }
   .logo {
     width: 10%;
     padding: 15px 0;
-  }
-  .circle {
-    position: fixed;
-    left: 33%;
-    bottom: 0.2%;
-    height: 100%;
   }
   form{
     margin-top: 35px;
@@ -60,7 +55,7 @@
     border-radius: 25px;
     font-size: 18px;
     border: 0.5px solid rgba(0, 0, 0, 0.493);
-    padding: 6px 122px;
+    padding: 6px 77px;
     margin: 8px 0;
     outline: none;
 
@@ -77,7 +72,7 @@
     border-radius: 25px;
     margin: 8px 0;
     font-size: 18px;
-    padding: 5px 65px;
+    padding: 5px 20px;
     outline: none;
 
   }
