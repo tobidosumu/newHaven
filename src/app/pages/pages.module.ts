@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from './../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule } from '@angular/forms';
-import { MaterialModule } from '../material/material.module';
 
 import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
@@ -27,8 +26,7 @@ import { CharitiesComponent } from './home/charities/charities.component';
     CommonModule,
     PagesRoutingModule,
     SharedModule,
-    FormsModule,
-    MaterialModule
+    FormsModule
   ]
 })
 export class PagesModule { }
