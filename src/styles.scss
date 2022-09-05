@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -32,12 +31,18 @@ $nh-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($nh-theme);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 a, ul, li, body, h1, h2, h3, h4, h5, p {
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 95px;
 }
 
 // margins
@@ -50,6 +55,11 @@ a, ul, li, body, h1, h2, h3, h4, h5, p {
 .ms-6 {
     margin-left: 4rem;
 }
+
+// paddings
+.pe-6 {
+    margin-bottom: 6.5rem;
+} 
 
 // variables
 $myFont: 'Roboto', sans-serif; 
@@ -115,7 +125,7 @@ $headerHeight: 120px;
 @mixin myH4 {
     font-size: 1.5rem;
     font-weight: 700;
-    // line-height: 2rem;
+    line-height: 1.7rem;
     color: $blackFontColor;
 }
 @mixin roundBtn { 
@@ -184,5 +194,8 @@ $headerHeight: 120px;
 @mixin btnBoxShadowHover {
     box-shadow: 0px 0px 4px $redBgColor;
 }
-// html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// widths
+.full-width {
+    width: 100%;
+}
