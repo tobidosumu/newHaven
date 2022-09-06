@@ -1,0 +1,110 @@
+@import 'src/styles';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+section{
+    margin: 150px 80px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+
+}
+h1{
+    color: #3FA9F5;
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.searchBox {
+    display: flex;
+    width: 100%;
+    border: 1px solid #839bb1; 
+    background-color: #fff;
+    border-radius: 50px;
+
+}
+
+.searchForm {
+    display: flex;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+
+}
+
+.searchForm:hover {
+    border: 1px solid #000;
+}
+
+
+::placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+.searchBox input[type=search] {
+    width: 110%;
+    height: 46px;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    padding-left: 5%;
+}
+
+
+.searchIcon {
+    width: 38px;
+}
+  
+.searchBtn {
+    width: 50px;
+    padding: 4px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3FA9F5;
+    cursor: pointer; 
+}
+.faq{
+    margin: 100px 0;
+}
+.accordion-item{
+    margin: 15px 0;
+    border: none;
+}
+.accordion-button{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card-body{
+    padding: 10px 0;
+}
+
+	/* Custom style */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+  

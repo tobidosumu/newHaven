@@ -1,0 +1,204 @@
+// @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap');
+// .bg {
+//     max-height: 1080px;
+//     max-width: 1920px;
+//     position: relative;
+// }
+// .circle {
+//     position: fixed;
+//     left: 33%;
+//     bottom: 0.2%;
+//     height: 100%;
+// }
+// .logo {
+//     position: fixed;
+//     top: 0%;
+//     left: 0%;
+//     padding: 3%;
+// }
+// .wordbox1-and-input {
+//     position: fixed;
+//     top: 35%;
+//     padding: 3%;
+//     font-family: 'Libre Franklin', sans-serif;
+// }
+// .text1 {
+//     font-weight: 700;
+//     font-size: x-large;
+// }
+// .text2 {
+//     font-weight: 400;
+//     font-size: x-large;
+// }
+// form {
+//     position: fixed;
+//     width: 992px;
+//     right: 0%;
+//     top: 40.8%;
+// }
+// input {
+//     position: absolute;
+//     left: 30%;
+//     width: 400px;
+//     height: 50px;
+//     padding: 0 2% 0 2%;
+//     border-width: thin;
+//     border-radius: 200px;
+// }
+// ::placeholder {
+//     font-family: 'Libre Franklin', sans-serif;
+//     font-weight: 300;
+//     font-size: large;
+//     color: black;
+//     position:absolute;
+//     left: 5.7%;
+//     top: 25%;
+// }
+// .name {
+//     position: absolute;
+//     bottom: 100%;
+// }
+// .phone {
+//     position: absolute;
+//     top: 101.5%;
+// }
+// .password {
+//     position: absolute;
+//     top: 178.5%;
+// }
+// .signinsignupforgot {
+//     position: fixed;
+//     width: 992px;
+//     right: -1.5%;
+//     top: 40.8%;
+// }
+// .textbanner {
+//     font-family: 'Libre Franklin', sans-serif;
+//     font-weight: 700;
+//     font-size: xx-large;
+//     color: black;
+//     position: absolute;
+//     left: 30.121%;
+//     top: -460%;
+// }
+// .signup {
+//     font-family: 'Libre Franklin', sans-serif;
+//     font-weight: 400;
+//     color: black;
+//     position: absolute;
+//     left: 30.121%;
+//     top: 1000%;
+// }
+// a {
+//     color: black;
+// }
+// a:link {
+//     text-decoration: none;
+// }
+// a:hover {
+//     text-decoration: none;
+//     color: #3FA9F5;
+// }
+// a:visited {
+//     text-decoration: none;
+// }
+// a:active {
+//     text-decoration: none;
+// }
+// .link1 {
+//     font-weight: 700;
+// }
+// button {
+//     width: 200px;
+//     height: 70px;
+//     border: none;
+//     border-radius: 200px;
+//     background-color: #3FA9F5;
+//     color: white;
+//     position: absolute;
+//     bottom: -700px;
+//     right: 2.5%;
+//     font-size: larger;
+// }
+// button:hover {
+//     background-color: #83BFEA;
+// }
+// button:active {
+//     background-color: #3C9FE6;
+// }
+
+
+
+@import 'src/styles';
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 4.4%;
+    font-family: 'Libre Franklin', sans-serif;
+    background: $whiteBgColor url("/assets/images/signinCircle.png") no-repeat 500px 0px;
+    background-size: contain;
+    .leftContainer {
+        width: 40%;
+        height: 100vh;
+    }
+    .logoContainer {
+        height: $headerHeight;
+    }
+    .caption {
+        h1 {
+            @include myH3();
+            line-height: 2.4rem;
+            padding-right: 40%;
+
+        }
+        p {
+            font-size: $tertiaryFontSize;
+        }
+    }
+
+    .rightContainer {
+        width: 60%;
+        .formContainer {
+            width: 60%;
+            text-align: left;
+            .formWrapper {
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+
+                h2 {
+                    @include myH4();
+                }
+                .form {
+                    width: 100%;
+                    input {
+                        &.mat-form-field-appearance-outline .mat-form-field-outline {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+        .buttonsContainer {
+            width: 100%;
+            a {
+                font-size: $navLinkFontSize;
+                font-weight: 500;
+                &:last-child {
+                    color: $whiteFontColor;
+                    background-color: $blueBgColor;
+                }
+            }
+        }
+        #txt1{
+            font-size:28px;
+            // line-height:204px;
+           }
+           
+           .material-icons{
+               display: inline-flex;
+               vertical-align: top;
+           }
+    }
+}

@@ -1,0 +1,62 @@
+<app-header></app-header>
+<div class="container-fluid d-flex profile_container px-5">
+    <!-- left-hand div (main) -->
+    <div class="main px-2">
+        <div class="main_wrapper">
+            <div class="heroWrapper ps-1">
+                <img src="/assets/images/daughters_of_zion.png" class="img-fluid">
+                <div class="userBioWrapper d-flex ps-4 ms-2">
+                    <img src="assets/images/moji.png" alt="user profile photo">
+                    <h4 class="pt-5 ps-2 mt-4">Mojisola Badmus</h4>
+                </div>
+            </div>
+            <p class="pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. 
+                versions of Lorem Ipsum.
+            </p>
+            <div class="detailsWrapper mt-5">
+                <h4>Contact</h4>
+                <div>
+                    <ul class="my-3">
+                        <li class="p-2"><img src="assets/images/icons/phone_icon.png">08054548782</li>
+                        <li class="p-2"><img src="assets/images/icons/email_icon.png">mojibadmus@gmail.com</li> 
+                    </ul>
+                    <ul class="my-3 ps-2">
+                        <li><a href="#"><img src="assets/images/icons/facebook.png"></a></li>
+                        <li><a href="#"><img src="assets/images/icons/twitter.png"></a></li>
+                        <li><a href="#"><img src="assets/images/icons/instagram.png"></a></li>
+                    </ul>
+                    <h4 class="mt-5">Donation Timeline</h4>
+                    <ul class="mt-3">
+                        <li class="ps-3">• Donated <strong>₦50,000</strong> to <strong><a routerLink="/profile">Irede Foundation</a></strong> - 3 sec ago</li>
+                        <li class="ps-3">• Donated <strong>₦40,000</strong> to <strong><a routerLink="/profile">Daughters of zion foundation</a></strong> - a day ago</li>
+                        <li class="ps-3">• Donated <strong>₦70,000</strong> to <strong><a routerLink="/profile">Mothers of the Earth foundation</a></strong> - 4 weeks ago</li>
+                        <li class="ps-3">• Donated <strong>₦10,000</strong> to <strong><a routerLink="/profile">NFS Foundation</a></strong> - a month ago</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- right-hand div (minor)  -->
+    <div class="minor pe-3 d-flex justify-content-end">
+        <div class="stickySideBar d-flex flex-column align-item-center text-center sticky-top mt-2">
+            <button class="ctaBtn">Edit Profile</button>
+            <button class="ctaBtn">Favorites</button>
+
+            <!-- suggestedCharitiesWrapper -->
+            <div class="suggestedCharitiesWrapper mt-4">
+                <h3 class="mb-3">Charities you may like</h3>
+                <a routerLink="/profile" class="suggestedCharity">
+                    <div>
+                        <img src="assets/images/charity_profile_img.png" alt="african boy needs your donation to fund his school fee">
+                        <img src="assets/images/icons/red_heart.svg">
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text...</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

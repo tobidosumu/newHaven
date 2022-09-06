@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<div class="flexcontainer">
+    <a routerLink=""><img class= "imglogo" src="../../../assets/images/havenDesktopLogo.png" width="187px"></a>
+    <img class= "imgline" src="../../../assets/images/Squigly line for new password.png" height="350px" width="100%">
+    <div class="text1-input-button">
+        <p class="text1">
+            Enter your new password
+        </p>
+        <input [type]=" shoPassword ? 'text' : 'password' " placeholder="New password"><br>
+        <i class="far fa-eye" id="togglePassword" style="position: absolute; left: 84%; top: 25.2%; cursor: pointer;" (click)='shoHidePassword()'></i>
+        <input class="retype" [type]=" showPassword ? 'text' : 'password' " placeholder="Retype New password"><br>
+            <i class="far fa-eye" id="togglePassword" style="position: absolute; left: 84%; top: 52.5%; cursor: pointer;" (click)='showHidePassword()'></i>
+        <button>Continue</button>
+    </div>
+</div>   

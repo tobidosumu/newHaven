@@ -1,0 +1,174 @@
+@import 'src/styles';
+
+.carousel-inner {
+    background-color: $blackBgColor;
+    .img-slide {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        object-position: 0% 63%;
+        opacity: 0.6;
+    }
+}
+.carousel-control-prev, .carousel-control-next {
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+            transition: 1s ease-out;
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+// action buttons
+.ctaBtn-container {
+    height: 20vh;
+    background: $blueBgColor url("/assets/images/bg-pc-pattern.png") no-repeat 0px -25px;
+    background-size: cover;
+    button {
+        font-size: $secondaryFontSize;
+        font-weight: 500;
+        background-color: $whiteFontColor;
+        border: 1px solid $blueBorderColor;
+        @include btnBoxShadow();
+        &:hover {
+            @include btnBoxShadowHover();
+        }
+        &:first-child {
+            width: 26%;
+        }
+    }
+}
+
+// donation steps
+.donateStep-container {
+    h1 {
+        @include myH1();
+        font-weight: 600;
+    }
+    h3 {
+        font-size: $secondaryFontSize;
+        @include myH3();
+    }
+    p {
+        font-size: $subHeading;
+    }
+    .card-img-top {
+        width: 200px;
+    }
+}
+
+// category container
+.category-container {
+    .navbar {
+        background-color: $blueBgColor;
+    }
+    .categoryMenu {
+        border-bottom: 2px solid $whiteBorder;
+    }
+    .menuBtn > a {
+        @include category-icon();
+    }
+    .menuBtn > a:hover {
+        background-color: $menuBtnBgHover;
+    }
+    .menuNavBtn > a {
+        @include roundBtn();
+    }
+    .activeBtn > a {
+        background-color: $whiteBgColor;
+        &:hover {
+            background-color: $whiteBgColor;
+        }
+        p {
+            color: $blueFontColor;
+        }
+    }
+
+    //causes card container
+    .causes-container {
+        width: 100%;
+        padding: 4% 5%;
+
+        .cardsWrapper {
+            // width: 100%;
+            .charityCard {
+                width: 24%;
+                padding: 5px;
+                transition: transform .2s;
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: $offWhiteBgColor !important;
+                }
+            }
+        }
+    }
+}
+
+// our story
+.ourStory-container {
+    background: #ffffff url("/assets/images/aboutUsBg.png") no-repeat 0px -40px;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5%;
+    h1 {
+        width: 20%;
+        @include myH1();
+    }
+    h3 {
+        @include myH3();
+        span {
+            color: $redFontColor;
+        }
+    }
+    p {
+        width: 70%;
+        font-size: $secondaryFontSize;
+        line-height: 1.5rem;
+    }
+}
+
+// meet the team
+.meetTeam-container {
+    padding-bottom: 5%;
+    background: #ffffff url("/assets/images/teamBg.png") no-repeat -40px 0px;
+    background-size: cover;
+    h1 {
+        @include myH1();
+    }
+    h3 {
+        @include myH3();
+    }
+    .teamDetails {
+        width: 90%;
+        padding-top: 5%;
+        div {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 180px;
+                border-radius: 50%;
+            }
+            h3 {
+                font-size: $secondaryFontSize;
+                font-weight: 600;
+                padding: 7% 5% 0%;
+                text-align: center;
+            }
+            p > a {
+                font-size: 1.1em;
+                color: $blackFontColor;
+                text-decoration: none;
+                &:hover {
+                    color: $blueFontColor;
+                }
+            } 
+        }
+
+    }
+}
