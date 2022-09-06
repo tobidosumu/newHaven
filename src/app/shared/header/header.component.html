@@ -13,7 +13,7 @@
 
     <div class="col-sm-4 collapse navbar-collapse" id="mynavbar"><!-- search bar container -->
       <form class="d-flex">
-        <div class="input-group border border-secondary rounded-pill">
+        <div class="input-group rounded-pill">
           <div>
             <button
               (click)="toggleCategoryMenu()" 
@@ -39,7 +39,7 @@
             </div><!-- search dropdwon container -->
           </div>
           <input type="text" (focus)="showCharities()" 
-            class="form-control border border-secondary border-0 border-start" 
+            class="form-control border-0 border-start" 
             placeholder="...search for a charity"
             [(ngModel)]="query">
           <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/images/icons/magnifying_lens.png" class="img-fluid"></a></span>

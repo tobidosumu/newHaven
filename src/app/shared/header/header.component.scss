@@ -13,6 +13,13 @@ nav {
 
     // search bar
     form {
+        border: 1px solid $primaryBorderColor;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.151);
+        border-radius: 50px;
+        &:hover, &:focus-within {
+            border: 1px solid $blueBorderColor !important;
+
+        }
         button {
             img {
                 width: 12px;
