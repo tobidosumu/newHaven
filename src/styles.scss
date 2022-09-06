@@ -66,8 +66,8 @@ $myFont: 'Roboto', sans-serif;
 
 // font-sizes
 $smallFont-size: .9rem;
-$navLinkFontSize: 1rem;
 $primaryFontSize: .95rem;
+$navLinkFontSize: 1rem;
 $secondaryFontSize: 1.2rem;
 $tertiaryFontSize: 1.4rem;
 $subHeading: 1.5rem;
@@ -101,16 +101,19 @@ $grayBorderColor: #f1f0f0bd;
 
 // header height
 $headerHeight: 18vh;
+$headerHeight: 120px;
 
 // mixins (functions)
 @mixin myH1 {
     font-size: 5rem;
     font-weight: 700;
+    line-height: 5rem;
     color: $blueFontColor;
 }
 @mixin myH2 {
     font-size: 4rem;
     font-weight: 700;
+    line-height: 2rem;
     color: $blueFontColor;
 }
 @mixin myH3 {

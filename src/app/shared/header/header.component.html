@@ -1,20 +1,17 @@
-<nav id="targetHeader" class="navbar navbar-expand-md bg-white px-5 shadow-sm sticky-top">
+<nav class="navbar navbar-expand-md bg-white px-5 shadow-sm sticky-top">
   <div class="container-fluid">
 
-    <!-- navbar is bootstrap's logo class -->
     <div class="col-sm-3">
       <a routerLink="/" routerLinkActive="active">
         <img src="assets/images/havenDesktopLogo.png" alt="Haven charity logo" class="logo">
       </a>
-    </div>
+    </div><!-- navbar is bootstrap's logo class -->
 
-    <!-- mobile menu toggle bars  -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button><!-- mobile menu toggle bars  -->
 
-    <!-- search bar -->
-    <div class="col-sm-4 collapse navbar-collapse" id="mynavbar">
+    <div class="col-sm-4 collapse navbar-collapse" id="mynavbar"><!-- search bar container -->
       <form class="d-flex">
         <div class="input-group border border-secondary rounded-pill">
           <div>
@@ -23,33 +20,33 @@
               type="button" 
               class="catBtn btn py-2 px-3 rounded-end rounded-pill">
               Categories
-              <img src="assets/img/icons/chevron_down.png">
+              <img src="assets/images/icons/chevron_down.png">
             </button>
 
-            <!-- search dropdwon container -->
             <div 
               *ngIf="ShowCategoryMenu" 
               class="searchDropdown-container d-flex align-items-center flex-column">
               
               <div class="d-flex">
                 <ul class="nav-item">
-                  <li><a href="#"><img src="assets/img/icons/trendingDropdown.png" class="trending-icon">Trending</a></li>
-                  <li><a href="#"><img src="assets/img/icons/religiousDropdown.png">Religious</a></li>
-                  <li><a href="#"><img src="assets/img/icons/sportsDropdown.png">Sports</a></li>
-                  <li><a href="../../wildlife-cat"><img src="assets/img/icons/wildlifeDropdown.png">Wildlife</a></li>
-                  <li><a href="#"><img src="assets/img/icons/individualsDropdown.png">Individuals</a></li>         
+                  <li><a href="#"><img src="assets/images/icons/trendingDropdown.png" class="trending-icon">Trending</a></li>
+                  <li><a href="#"><img src="assets/images/icons/religiousDropdown.png">Religious</a></li>
+                  <li><a href="#"><img src="assets/images/icons/sportsDropdown.png">Sports</a></li>
+                  <li><a href="../../wildlife-cat"><img src="assets/images/icons/wildlifeDropdown.png">Wildlife</a></li>
+                  <li><a href="#"><img src="assets/images/icons/individualsDropdown.png">Individuals</a></li>         
                 </ul>
               </div>
-            </div>
-
+            </div><!-- search dropdwon container -->
           </div>
-          <input type="text" class="form-control border border-secondary border-0 border-start" placeholder="...search for a charity">
-          <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/img/icons/magnifying_lens.png" class="img-fluid"></a></span>
+          <input type="text" (focus)="showCharities()" 
+            class="form-control border border-secondary border-0 border-start" 
+            placeholder="...search for a charity"
+            [(ngModel)]="query">
+          <span class=" rounded-circle p-1 ms-2"><a routerLink=""><img src="assets/images/icons/magnifying_lens.png" class="img-fluid"></a></span>
         </div>
       </form>
-    </div>
+    </div><!-- search bar -->
 
-    <!-- listed link items -->
     <div class="col-sm-4 collapse navbar-collapse justify-content-between" id="mynavbar">
       <ul class="btnGroup navbar-nav ms-3 justify-content-between">
         <li class="nav-item">
@@ -61,25 +58,23 @@
         </li>
       </ul>
 
-      <!-- user signup & login button  -->
       <div class="btnGroup justify-content-between">
-        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/img/icons/night_mode.png" class="p-1" style="width:23px; height:25px; margin:0px 2px;"></button>
+        <button class="btn btn-outline rounded-circle p-2 me-3"><img src="assets/images/icons/night_mode.png" class="p-1" style="width:23px; height:25px; margin:0px 2px;"></button>
        
         <button 
           (click)="toggleUserMenu()" 
           type="button" 
           class="userSignup-button btn btn-outline rounded-pill py-2 px-3">
-          <img src="assets/img/icons/menu_bars.svg" style="width:20px" class="me-2">
-          <img src="assets/img/icons/user_icon.png" style="width:20px">
+          <img src="assets/images/icons/menu_bars.svg" style="width:20px" class="me-2">
+          <img src="assets/images/icons/user_icon.png" style="width:20px">
         </button>
-      </div>
+      </div><!-- user signup & login button  -->
 
-      <!-- user signup & login dropdown menu  -->
       <div 
         *ngIf="ShowUserMenu"
         class="userSignup-container d-flex align-items-center flex-column">
         <div class="PhotoName-wrapper d-flex align-items-center justify-content-center flex-column">
-          <a routerLink="/user-profile"><img class="img-fluid" src="assets/img/moji.png"></a>
+          <a routerLink="/user-profile"><img class="img-fluid" src="assets/images/moji.png"></a>
           <p class="py-3"><a routerLink="/user-profile">Mojisola Badmus</a></p>
           <ul class="nav-item p-0 justify-content-center">
             <a routerLink="/auth/login"><li class="nav-item py-2">Login</li></a>
@@ -87,7 +82,7 @@
             <a routerLink="/faq"><li class="nav-item py-2">F.A.Q.</li></a>          
           </ul>
         </div>
-      </div>
-    </div>
+      </div><!-- user signup & login dropdown menu  -->
+    </div><!-- listed link items -->
   </div>
 </nav>

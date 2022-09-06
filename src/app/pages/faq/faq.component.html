@@ -1,33 +1,71 @@
 <app-header></app-header>
-<main>
-    <section>
-        <h1>Frequently asked<br>questions</h1>
+<section>
+    <main>
+    <h1>Frequently asked<br>questions</h1>
     <div class="col-sm-4 searchContainer">
-            <form class="searchForm" action="">
-            <div class="searchBox">               
+            <form class="searchForm" action="action">
+            <div class="searchBox">
                 <input type="search" placeholder="search for a charity..." name="search">
-                <button class="searchBtn" type="submit"><img class="searchIcon" src="./assets/img/icons/magnifying_lens.png"></button>
             </div>
-        </form>
-    </div>
-    </section>
-
+                <button class="searchBtn" type="submit"><img class="searchIcon" src="./assets/images/icons/magnifying_lens.png"></button>
+            </form>
+        </div>
+    </main>
     <div class="faq">
-    <div class="col-sm-4 searchContainer">
-                <div class="dropdown" id="dropdown2">
-                    <button href="#" class="d-flex justify-content-between align-items-center">Create a fundraiser <img src="./assets/img/icons/chevron_down.png"></button>
+    <div class="m-4">
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle= "collapse" data-bs-target="#collapseOne">What is Haven?</button>									
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Haven is a charity web app written in Angular. It is a platform where charity organisations and as well as individuals can seek for monetary, and material support from registered users on the app.</p>
+                    </div>
                 </div>
-    </div>
-    <div class="col-sm-4 searchContainer">
-        <div class="dropdown" id="dropdown2">
-            <button href="#" class="d-flex justify-content-between align-items-center">Profile issues <img src="./assets/img/icons/chevron_down.png"></button>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What we Do?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>It is a platform where charity organisations and as well as individuals can seek for monetary, and material support from registered users on the app.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">How to make a Donation</button>                     
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Click on Donate button on the Header then you would be directed to the categories section which houses various charities you can make a donation to.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Create a Cause</button>                     
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Click on Create button on the Header then you would be directed to the page to input details about your Charity or the cause you want to promote.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">Toggle dark mode</button>                     
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Click on the moon icon on the header to switch to Dark mode.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-sm-4 searchContainer">
-        <div class="dropdown" id="dropdown2">
-            <button href="#" class="d-flex justify-content-between align-items-center">Create a fundraiser <img src="./assets/img/icons/chevron_down.png"></button>
-        </div>
     </div>
-    </div>
-</main>
+</section>
 <app-footer></app-footer>
