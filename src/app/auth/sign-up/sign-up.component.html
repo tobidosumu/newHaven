@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <div class="bg">
     <a routerLink=""><img class= "logo" src="../../../assets/img/havenDesktopLogo.png" alt="Haven" width="187px"></a>
     <img class= "circle" src="../../../assets/img/signin circle.png">
+=======
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+<!-- <div class="bg"> -->
+    <!-- <a routerLink=""><img class= "logo" src="../../../assets/images/havenDesktopLogo.png" alt="Haven" width="187px"></a> -->
+    <!-- <img class= "circle" src="../../../assets/images/signin circle.png">
+>>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
     <div class="wordbox1-and-input">
         <p class="text1">
         Let your fundraising<br>
@@ -9,13 +16,18 @@
         </p>
         <p class="text2">
         We've made it easy for you.
-        </p>
-        <form>
+        </p> -->
+        <!-- <form>
             <input class="name" type="text" placeholder="Name"><br>
             <input class="email" type="text" placeholder="Email"><br>
             <input class="phone" type="text" placeholder="Phone Number"><br>
             <input [type]= " shoPassword ? 'text' : 'password' " class="password" placeholder="password"><br>
             <i class="far fa-eye" id="togglePassword" style="position: absolute; left: 64%; top: 195%; cursor: pointer;" (click)='shoHidePassword()'></i>
+        </form> -->
+        <!-- <form>
+            <mat-form-field>
+                <input matInput>
+            </mat-form-field>
         </form>
     </div>
     <div class="signinsignupforgot">
@@ -26,4 +38,75 @@
         </p>
     </div>
     <button>Continue</button>
-</div>
+</div> -->
+
+
+<main class="d-flex">
+    <section class="leftContainer d-flex flex-column justify-content-between">
+        <div class="logoContainer d-flex align-items-center">
+            <a routerLink="/" routerLinkActive="active">
+                <img src="assets/images/havenDesktopLogo.png" alt="Haven charity logo" class="logo">
+            </a>
+        </div>
+
+        <div class="caption pe-6">
+            <h1>Let your fundraising journey begin!</h1>
+            <p class="pt-3">We've made it easy for you.</p>
+        </div>
+
+        <div class="footer">
+            <h4>© 2010-2022 Haven</h4>
+        </div>
+    </section>
+
+    <section class="rightContainer d-flex flex-column align-items-end justify-content-center">
+        <div class="formContainer p-3">
+            <div class="formWrapper p-3 d-flex flex-column align-items-center">
+                <mat-card-header class="py-4">
+                    <mat-card-title><h2>Sign up</h2></mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="form">
+                    <div class="col-md-12">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>First Name</mat-label>
+                            <input matInput placeholder="First name" required class="rounded-pill">
+                            <mat-hint align="end" style="color: red;">Min 5 characters</mat-hint>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-12">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput placeholder="Last name" required class="rounded-pill">
+                            <mat-hint align="end">Min 5 characters</mat-hint>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-12">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Email Address</mat-label>
+                            <input matInput placeholder="Email Address" required class="rounded-pill">
+                            <mat-hint align="end">Min 5 characters</mat-hint>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-12">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="Password" type="password" required class="rounded-pill">
+                            <mat-hint align="end">Min 5 characters</mat-hint>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-12">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Repeat Password</mat-label>
+                            <input matInput placeholder="Repeat Password" required class="rounded-pill">
+                            <mat-hint align="end">Min 5 characters</mat-hint>
+                        </mat-form-field>
+                    </div>
+                </mat-card-content>
+            </div>
+            <div class="buttonsContainer d-flex mt-3 justify-content-around">
+                <span id="txt1"><a routerLink="/" class="rounded-pill btn px-5 py-3 btn-lg"><i class="material-icons">chevron_left</i> Back</a></span>
+                <span id="txt1"><a routerLink="/congrats" (click)="onSubmit()" class="rounded-pill btn px-5 py-3 btn-lg">Continue <i class="material-icons">chevron_right</i></a></span>
+            </div>
+        </div>
+    </section>
+</main>
