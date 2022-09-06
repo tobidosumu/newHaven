@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -35,7 +33,6 @@ $nh-theme: mat.define-light-theme((
 @include mat.all-component-themes($nh-theme);
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
->>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
 a, ul, li, body, h1, h2, h3, h4, h5, p {
     text-decoration: none;
     list-style: none;
@@ -48,8 +45,6 @@ a, ul, li, body, h1, h2, h3, h4, h5, p {
     width: 95px;
 }
 
-<<<<<<< HEAD
-=======
 // margins
 .mb-6 {
     margin-bottom: 6.5rem;
@@ -66,7 +61,6 @@ a, ul, li, body, h1, h2, h3, h4, h5, p {
     margin-bottom: 6.5rem;
 } 
 
->>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
 // variables
 $myFont: 'Roboto', sans-serif; 
 
@@ -122,8 +116,6 @@ $headerHeight: 18vh;
 @mixin myH3 {
     font-size: 2rem;
     font-weight: 700;
-<<<<<<< HEAD
-=======
     line-height: 2.5rem;
     color: $blackFontColor;
 }
@@ -131,7 +123,6 @@ $headerHeight: 18vh;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.7rem;
->>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
     color: $blackFontColor;
 }
 @mixin roundBtn { 
@@ -199,12 +190,9 @@ $headerHeight: 18vh;
 }
 @mixin btnBoxShadowHover {
     box-shadow: 0px 0px 4px $redBgColor;
-<<<<<<< HEAD
-=======
 }
 
 // widths
 .full-width {
     width: 100%;
->>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
 }
