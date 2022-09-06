@@ -1,0 +1,193 @@
+@import 'src/styles';
+
+// The styles below apply to search bar. catBtn refers to the category button inside the search bar 
+nav {
+    height: $headerHeight;
+    .catBtn {
+        height: 45px;
+        border: none;
+        &:hover {
+            border: none;
+        }
+    }
+
+    // search bar
+    form {
+        button {
+            img {
+                width: 12px;
+                margin-left: 12px;
+            }
+            &:hover {
+                background-color: $offWhiteBgColor;
+            }
+        }
+        .input-group .btn:focus {
+            background-color: $offWhiteBgColor;
+        } 
+
+        // search dropdown container
+        .searchDropdown-container {
+            width: 100%;
+            padding: 4%;
+            @include dropdown();
+            top: 65px;
+            background-color: $transparentBlueBgColor;
+                &::before {
+                @include dropdownArrow();
+                left: 7%;
+            }
+            & > div {
+                width: 100%;
+                overflow-y: scroll;
+                box-shadow: 
+                inset 0px 11px 8px -10px $transparentBlueBgColor,
+                inset 0px -11px 8px -10px $transparentBlueBgColor;
+                border-radius: 5px;
+                ul {
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    padding-right: 10px;
+                    li {
+                        padding: 0 7%;
+                        @include whiteBorder();
+                        margin: 8px;
+                        &:hover {
+                            @include blackBorder();
+                        }
+                        a {
+                            display: flex;
+                            width: 100%;    
+                            padding: 5px;
+                            margin: 10px 0;
+                            color: $whiteFontColor;
+                            img {
+                                padding-right: 10px;
+                                width: 34px;
+                            }
+                            & > .trending-icon {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+                &::-webkit-scrollbar {
+                    width: 7px;
+                    background-color: $offWhiteBgColor;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: $paragraphFontColor;
+                    &:hover {
+                        background-color: $blackFontColor;
+                    }
+                }
+            }
+        }
+        & > button:first-child {
+            font-size: $secondaryFontSize;
+        }
+        input:focus { 
+            box-shadow: none !important; 
+        }
+        // search icon button
+        span {
+            width:45px; 
+            height:45px; 
+            margin-left:2px;
+            background-color: $blueBgColor;
+            &:hover {
+                background-color: $transparentBlueBgColor;
+            }
+        }
+        
+    }
+    .vl {
+        height: 30px;
+        border-left: 1px solid $primaryBorderColor;
+    }
+
+    // listed link items
+    .btnGroup {
+        & > li > a {
+            // margin-left: 30px;
+            font-size: $navLinkFontSize;
+            font-weight: 500;
+            border: 1px solid $whiteBorder !important;
+            padding: 8px 20px;
+            letter-spacing: 1px;
+        }
+        & > li > a:hover {
+            border: 1px solid $primaryBorderColor !important;
+        }
+        & > li:nth-child(2) {
+            height: 30px; 
+            margin: auto;
+            border-left: 1px solid $primaryBorderColor;
+        }
+        button {
+            border: 1px solid $primaryBorderColor;
+        }
+        .userSignup-button:hover {
+            box-shadow: 0px 0px 4px $primaryBorderColor;
+        }
+    }
+
+    /* user profile dropdown starts here */
+    .userSignup-container {
+        @include dropdown();
+        height: 320px;
+        top: 100px;
+        right: 4.5%;
+    }
+    .userSignup-container { 
+        .PhotoName-wrapper {
+            width: 100%;
+            padding-top: 25px;    
+            &::before {
+                @include dropdownArrow();
+                position: absolute;
+                right: 7%;
+            }
+            & > a {
+            border-radius: 100%;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                &:hover {
+                    border: 2px solid $whiteBgColor;
+                }
+            }
+            }
+            p > a {
+                color: $whiteFontColor;
+                font-size: $navLinkFontSize;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                a {
+                    width: 100%;
+                    text-align: center;
+                    color: $whiteFontColor;
+                    border-top: 1px solid $whiteBorder;
+                    &:hover {
+                        background-color: $blueBgColor;
+                    }
+                    &:last-child {
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}

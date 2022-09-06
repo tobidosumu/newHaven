@@ -1,0 +1,24 @@
+@import 'src/styles';
+
+.charityImage {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.favoriteIcon {
+    font-size: 18px;
+    color: red;
+}
+
+.cardBody {
+    h4 {
+        color: $blackFontColor;
+        font-size: $navLinkFontSize;
+    }
+    p {
+        text-align: justify;
+        line-height: 1.1rem;
+        color: $paragraphFontColor;
+        font-size: $smallFont-size;
+    } 
+}

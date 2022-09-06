@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
   shoPassword: boolean = false;
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+  }
+
+  profileForm = this.fb.group({
+    firstName: [''],
+    lastName: [''],
+    address: [''],
+    dob: [''],
+    gender: ['']
+  });
+  
+  onSubmit() {
+    console.log('form data is ', this.profileForm.value);
   }
 
   shoHidePassword() {

@@ -4,7 +4,7 @@
     background-color: $blackBgColor;
     .img-slide {
         width: 100%;
-        height: 65vh;
+        height: 450px;
         object-fit: cover;
         object-position: 0% 63%;
         opacity: 0.6;
@@ -26,7 +26,7 @@
 // action buttons
 .ctaBtn-container {
     height: 20vh;
-    background: $blueBgColor url("/assets/img/bg-pc-pattern.png") no-repeat 0px -25px;
+    background: $blueBgColor url("/assets/images/bg-pc-pattern.png") no-repeat 0px -25px;
     background-size: cover;
     button {
         font-size: $secondaryFontSize;
@@ -91,14 +91,14 @@
     //causes card container
     .causes-container {
         width: 100%;
-        padding: 4%;
-        background-color: $offWhiteBgColor;
+        padding: 4% 5%;
+
     }
 }
 
 // our story
 .ourStory-container {
-    background: #ffffff url("/assets/img/aboutUsBg.png") no-repeat 0px -40px;
+    background: #ffffff url("/assets/images/aboutUsBg.png") no-repeat 0px -40px;
     background-attachment: fixed;
     background-size: cover;
     padding: 5%;
@@ -121,8 +121,7 @@
 // meet the team
 .meetTeam-container {
     padding-bottom: 5%;
-    background: #ffffff url("/assets/img/teamBg.png") no-repeat -40px 0px;
-    // background-attachment: fixed;
+    background: #ffffff url("/assets/images/teamBg.png") no-repeat -40px 0px;
     background-size: cover;
     h1 {
         @include myH1();

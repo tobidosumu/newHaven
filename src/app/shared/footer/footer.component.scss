@@ -96,4 +96,19 @@ footer {
             width: 25px;
         }
     }
+
+    #scrollTop {
+        position: fixed;
+        bottom: 8rem;
+        right: 1rem;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 12px;
+        background-color: $whiteBgColor;
+        @include btnBoxShadow();
+        img {
+            width: 21px;
+            margin-top: -4px;
+        }
+    }
 }
