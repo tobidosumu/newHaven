@@ -1,22 +1,29 @@
 @import 'src/styles';
 
 .profile_container {
-    background: $whiteBgColor url("/assets/img/profilePageBg.png") no-repeat 230px -25px;
+    background: $whiteBgColor url("/assets/images/profilePageBg.png") no-repeat 230px -25px;
     background-attachment: fixed;
     background-size: cover;
     padding-bottom: 50px;
     & > .main {
         width: 65%;
         & > .main_wrapper {
+            h4 {
+                @include myH4();
+            }
             & > p {
                 font-size: $secondaryFontSize;
+                line-height: 1.5rem
             }
             & > .detailsWrapper {
+                h4 {
+                    @include myH4();
+                }
                 & > div {
                     & > ul {
                         & > li {
                             padding-left: 14px;
-                            // font-weight: 500;
+                            line-height: 2rem;
                             font-size: $secondaryFontSize;
                             & > img {
                                 width: 20px;

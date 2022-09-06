@@ -3,7 +3,6 @@
 .profile_container {
     background: $whiteBgColor;
     padding-bottom: 50px;
-    // left-hand div (main)
     & > .main {
         width: 65%;
         & > .main_wrapper {
@@ -15,16 +14,23 @@
                         border-radius: 50%;
                         border: 3px solid $whiteBorder;
                     }
+                    h4 {
+                        @include myH4();
+                    }
                 }
             }
             & > p {
                 font-size: $secondaryFontSize;
+                line-height: 1.5rem;
             }
             & > .detailsWrapper {
+                h4 {
+                    @include myH4();
+                }
                 & > div {
                     & > ul:first-child {
                         & > li {
-                            font-size: $navLinkFontSize;
+                            font-size: $secondaryFontSize;
                             & > img {
                                 width: 22px;
                                 margin-right: 14px;
@@ -35,14 +41,22 @@
                         width: 30%;
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;                
-                        & > li > a > img {
+                        justify-content: space-between;                   
+                        img {
                             width: 25px;
                             &:hover {
                                 padding: 2px;
                             }
                         }
+                        & > li > a {
+                            font-size: $secondaryFontSize;
+                        }
                     }
+                    & > ul:last-child {
+                        font-size: $secondaryFontSize;
+                        line-height: 4rem;
+                    }
+                    
                 } 
             }
         }

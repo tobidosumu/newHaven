@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  isDarkTheme: boolean = true;
   query: string;
   charity: any;
   @Input() charities : any;
@@ -28,13 +27,10 @@ export class HomeComponent implements OnInit {
     this.http.get<Object>('../../../assets/data.json').subscribe(
     data => {
         this.charities = data;
-    });
-    this.isDarkTheme = localStorage.getItem('theme') === "Dark" ? true : false;
+    })
   }
 
-  storeThemeSelection() {
-    localStorage.setItem('theme',this.isDarkTheme?"Dark":"Light");
-  }
+
 
   scrollToCategory() {
     this.scroller.scrollToAnchor("targetCategory");

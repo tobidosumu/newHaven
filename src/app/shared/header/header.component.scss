@@ -138,10 +138,6 @@ nav {
     /* user profile dropdown starts here */
     .userSignup-container {
         @include dropdown();
-<<<<<<< HEAD
-        height: 320px;
-=======
->>>>>>> 728c01c16096e808b6fe629f20ac4b020d224654
         top: 100px;
         right: 4.5%;
     }
