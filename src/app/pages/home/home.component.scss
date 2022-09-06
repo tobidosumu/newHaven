@@ -94,14 +94,12 @@
         padding: 4% 5%;
 
         .cardsWrapper {
-            // width: 100%;
             .charityCard {
                 width: 24%;
                 padding: 5px;
                 transition: transform .2s;
                 &:hover {
                     transform: scale(1.1);
-                    background-color: $offWhiteBgColor !important;
                 }
             }
         }
