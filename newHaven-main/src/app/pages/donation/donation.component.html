@@ -1,0 +1,38 @@
+<!-- First step -->
+<body>
+    <div class="haven-logo">
+        <a routerLink="/"><img class="logo" src="../../../assets/img/havenDesktopLogo.png" alt="Haven logo"></a>
+    </div>
+    <form id="regForm">
+        <div class="merge">
+            <h2>Let your fund-raising<br>journey begin!</h2>
+            <p>We've made it easy for you.</p>
+        </div>
+        <!-- One "tab" for each step in the form: -->
+        <div class="flex-items">
+           <div class="tab">
+           <label>Donation for?</label><br>
+           <select oninput="this.className = ''" name="charitytype">
+                <option></option>
+                <option>Religious</option>
+                <option>Sports</option>
+                <option>Wild-life</option>
+                <option>Illness</option>
+                <option>Education</option>
+                <option>Business</option>
+            </select><br>
+            <label>What best describes your charity?</label><br>
+            <input type=""  placeholder="" oninput="this.className = ''" name="charitydescription">
+        </div>
+          <div class="continue">
+            <button routerLink="" type="button" id="nextBtn">Continue</button>
+          </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div class="steps">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+       </div>
+      </form>
+</body>
