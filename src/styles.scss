@@ -30,23 +30,23 @@ $nh-theme-light: mat.define-light-theme((
 
 .theme-light {@include mat.all-component-themes($nh-theme-light)}
 
-$nh-theme-dark: mat.define-dark-theme((
-  color: (
-    primary: $nh-primary,
-    accent: $nh-accent,
-    warn: $nh-warn,
-  )
-));
+// $nh-theme-dark: mat.define-dark-theme((
+//   color: (
+//     primary: $nh-primary,
+//     accent: $nh-accent,
+//     warn: $nh-warn,
+//   )
+// ));
 
-.darkMode {
-    @include mat.all-component-colors($nh-theme-dark);
-}
+// .darkMode {
+//     @include mat.all-component-colors($nh-theme-dark);
+// }
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 
-.theme-dark {@include mat.all-component-themes($nh-theme-dark)}
+// .theme-dark {@include mat.all-component-themes($nh-theme-dark)}
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
