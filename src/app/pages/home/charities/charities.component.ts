@@ -9,6 +9,8 @@ export class CharitiesComponent implements OnInit {
   @Input() charity: any;
   constructor() { }
 
+  isLiked: boolean = !false;
+
   ngOnInit(): void {
   }
 

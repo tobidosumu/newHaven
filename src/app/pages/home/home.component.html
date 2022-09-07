@@ -127,7 +127,7 @@
 
   <div class="causes-container"><!-- charities section -->
     <div class="cardsWrapper d-flex justify-content-between">
-      <a class="charityCard card border-0 d-flex align-items-center" routerLink="/profile" 
+      <a class="charityCard card border-0 d-flex align-items-center" 
         *ngFor="let charity of (charities)"
         (click)="showCharity(charity)"
         [style.backgroundColor]="charity.highlight ? '#EEE' : '#fff'">

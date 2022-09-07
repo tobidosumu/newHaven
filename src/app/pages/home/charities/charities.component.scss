@@ -7,8 +7,12 @@
 
 .favoriteIconwrapper {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.151);
-    .favoriteIcon {
+    .liked-color {
         color: red;
+    }
+      
+    .unliked-color {
+        color: white;
     }
 }
 

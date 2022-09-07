@@ -1,7 +1,8 @@
-<img class="charityImage img-fluid" [src]="'assets/images/thumbnails/' + charity.title + '_tn.png'" alt="{{ 'Photo of ' + charity.title }}">
+<img class="charityImage img-fluid" [src]="'assets/images/thumbnails/' + charity.title + '_tn.jpg'" alt="{{ 'Photo of ' + charity.title }}">
 <div class="card-img-overlay align-items-center d-flex flex-row-reverse">
-  <!-- <i class="favoriteIcon bi bi-heart-fill mt-4 me-3"></i> -->
-  <mat-icon class="favoriteIcon me-2">favorite</mat-icon>
+  <mat-icon [ngStyle]="{color: 'red'}" 
+    class="me-2">favorite
+  </mat-icon>
 </div><!-- heart container -->
 <div class="cardBody pt-3">
   <h4>{{ charity.title }}</h4>
