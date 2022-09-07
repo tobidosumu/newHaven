@@ -15,6 +15,6 @@ export class AppComponent {
     return this.isDark ? 'theme-dark' : 'theme-light';
   }
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor() { }
 
 }
