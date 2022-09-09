@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-
+import { DarkModeService } from 'angular-dark-mode';
 
 @Component({
   selector: 'app-header',

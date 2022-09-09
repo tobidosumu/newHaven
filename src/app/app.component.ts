@@ -8,12 +8,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Haven - Charity';
-  private isDark = false;
-
-  // @HostBinding('class')
-  get themeMode() {
-    return this.isDark ? 'theme-dark' : 'theme-light';
-  }
 
   constructor() { }
 

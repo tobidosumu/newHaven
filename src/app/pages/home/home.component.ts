@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
   query: string;
   charity: any;
@@ -29,8 +30,6 @@ export class HomeComponent implements OnInit {
         this.charities = data;
     })
   }
-
-
 
   scrollToCategory() {
     this.scroller.scrollToAnchor("targetCategory");

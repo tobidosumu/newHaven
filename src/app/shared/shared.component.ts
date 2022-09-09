@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeService } from 'angular-dark-mode';
+
 
 @Component({
   selector: 'app-shared',
