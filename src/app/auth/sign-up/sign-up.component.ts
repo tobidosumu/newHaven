@@ -7,26 +7,11 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
-  shoPassword: boolean = false;
-  constructor(private fb: FormBuilder) { }
+  
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  profileForm = this.fb.group({
-    firstName: [''],
-    lastName: [''],
-    address: [''],
-    dob: [''],
-    gender: ['']
-  });
-  
-  onSubmit() {
-    console.log('form data is ', this.profileForm.value);
-  }
-
-  shoHidePassword() {
-    this.shoPassword = !this.shoPassword;
-  }
 
 }
