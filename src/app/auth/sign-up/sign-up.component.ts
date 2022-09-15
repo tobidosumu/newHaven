@@ -23,7 +23,7 @@ export class SignUpComponent implements OnInit {
   myForm : any = FormGroup;
   
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];
-  constructor(public fb: FormBuilder) {}
+  constructor() {}
   ngOnInit(): void {
     this.reactiveForm();
   }
