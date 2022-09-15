@@ -54,7 +54,7 @@
 
     <section class="rightContainer d-flex flex-column align-items-end justify-content-center">
         <div class="formContainer p-3">
-            <div class="formWrapper p-3 d-flex flex-column align-items-center">
+            <form novalidate class="formWrapper p-3 d-flex flex-column align-items-center">
                 <mat-card-header class="py-4">
                     <mat-card-title><h2>Sign up</h2></mat-card-title>
                 </mat-card-header>
@@ -62,43 +62,50 @@
                     <div class="col-md-12">
                         <mat-form-field appearance="outline" class="full-width">
                             <mat-label>First Name</mat-label>
-                            <input matInput placeholder="First name" required class="rounded-pill">
+                            <input matInput placeholder="First name" formControlName="firstName" required>
+                              <!-- error -->
+                            <mat-error *ngIf="errorHandling('firstName', 'required')">
+                                You must provide a<strong>name</strong>
+                            </mat-error>
                             <mat-hint align="end" style="color: red;">Min 5 characters</mat-hint>
                         </mat-form-field>
                     </div>
                     <div class="col-md-12">
                         <mat-form-field appearance="outline" class="full-width">
                             <mat-label>Last Name</mat-label>
-                            <input matInput placeholder="Last name" required class="rounded-pill">
+                            <input matInput placeholder="Last name" formControlName="lastName" required>
                             <mat-hint align="end">Min 5 characters</mat-hint>
                         </mat-form-field>
                     </div>
                     <div class="col-md-12">
                         <mat-form-field appearance="outline" class="full-width">
                             <mat-label>Email Address</mat-label>
-                            <input matInput placeholder="Email Address" required class="rounded-pill">
+                            <input matInput placeholder="Email Address" formControlName="email" required>
                             <mat-hint align="end">Min 5 characters</mat-hint>
                         </mat-form-field>
                     </div>
+                    
                     <div class="col-md-12">
                         <mat-form-field appearance="outline" class="full-width">
                             <mat-label>Password</mat-label>
-                            <input matInput placeholder="Password" type="password" required class="rounded-pill">
+                            <input matInput placeholder="Password" type="password" formControlName="password" required>
                             <mat-hint align="end">Min 5 characters</mat-hint>
                         </mat-form-field>
                     </div>
                     <div class="col-md-12">
                         <mat-form-field appearance="outline" class="full-width">
                             <mat-label>Repeat Password</mat-label>
-                            <input matInput placeholder="Repeat Password" required class="rounded-pill">
-                            <mat-hint align="end">Min 5 characters</mat-hint>
+                            <input matInput placeholder="Repeat Password" formControlName="password" required>
+                            <mat-icon matSuffix></mat-icon>
+                            <mat-hint align="end">Enter your password</mat-hint>
                         </mat-form-field>
                     </div>
                 </mat-card-content>
-            </div>
+            </form>
             <div class="buttonsContainer d-flex mt-3 justify-content-around">
-                <span id="txt1"><a routerLink="/" class="d-flex rounded-pill btn px-5 py-3 btn-lg"><i class="material-icons">chevron_left</i> Back</a></span>
-                <span id="txt1"><a routerLink="/congrats" (click)="onSubmit()" class="d-flex rounded-pill btn px-5 py-3 btn-lg">Continue <i class="material-icons">chevron_right</i></a></span>
+                <button mat-flat-button color="primary">Submit</button>
+                <!-- <span id="txt1"><a routerLink="/" class="d-flex rounded-pill btn px-5 py-3 btn-lg"><i class="material-icons">chevron_left</i> Back</a></span> -->
+                <!-- <span id="txt1"><a routerLink="/congrats" class="d-flex rounded-pill btn px-5 py-3 btn-lg">Continue <i class="material-icons">chevron_right</i></a></span> -->
             </div>
         </div>
     </section>

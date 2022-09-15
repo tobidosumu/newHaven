@@ -1,5 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+export interface Subject {
+  fistName: string;
+  lastName: string;
+  email: string;
+  password: string;
+}
 
 @Component({
   selector: 'app-sign-up',
@@ -7,26 +15,36 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent implements OnInit {
-  shoPassword: boolean = false;
-  constructor(private fb: FormBuilder) { }
 
-  ngOnInit(): void {
-  }
-
-  profileForm = this.fb.group({
-    firstName: [''],
-    lastName: [''],
-    address: [''],
-    dob: [''],
-    gender: ['']
-  });
+  visible = true;
+  selectable = true;
+  removable = true;
+  addOnBlur = true;
+  myForm : any = FormGroup;
   
-  onSubmit() {
-    console.log('form data is ', this.profileForm.value);
+  readonly separatorKeysCodes: number[] = [ENTER, COMMA];
+  constructor(public fb: FormBuilder) {}
+  ngOnInit(): void {
+    this.reactiveForm();
   }
 
-  shoHidePassword() {
-    this.shoPassword = !this.shoPassword;
+  /* Reactive form */
+  reactiveForm() {
+    this.myForm = this.fb.group({
+      firstName: ['', [Validators.required]],
+      lastName: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      password: ['', [Validators.required]],
+
+    });
   }
+
+/* Handle form errors in Angular 8 */
+public errorHandling = (control: string, error: string) => {
+  return this.myForm.controls[control].hasError(error);
+}
+submitForm() {
+  this.myForm.value
+}
 
 }
